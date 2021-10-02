@@ -7,15 +7,13 @@
   <title>Document</title>
 </head>
 <body>
-    <h2>Date 객체</h2>
+    <h2>Window 객체</h2>
     <script>
-      'use strict'
-      // const date = new Date();
-      console.log(new Date); // ()은 생략되었다. new Date()도 가능.
+        'use strict'
 
-      
-
-
+        for(let win in window){
+            console.log('${win} : ${window[win]}');
+        }
     </script>
 </body>
 </html>
