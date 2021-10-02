@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h2>setInterval</h2>
+    <script>
+        'use strict'
+        function h1(){
+          console.log('안녕하세요. 여러분!');
+        }
+
+        function stopHi(){
+            console.log('h1() 중지!');
+            clearInterval(si);
+        }
+
+        const s1 = window.setInterval(hi,2000);
+    </script>
+    <button onclick = "stopHi()">중지</button>
+</body>
+</html>

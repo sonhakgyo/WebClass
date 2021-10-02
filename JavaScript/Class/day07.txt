@@ -29,6 +29,33 @@ Window 객체
 - 비표준 객체
 
 
+clearInterval() : setInterval()에서 실행된 함수를 취소
+    clearInterval(setInterval의 이름);
+
+콜백 함수(Callback Function)
+- 파라미터로 함수를 전달받아 함수의 내부에서 실행하는 함수를
+
+  const num = [1, 2, 3, 4, 5]
+
+  num.forEach(x => {
+    console.log(x * 10);
+  } );
+
+콜백 지옥!
+    Function add(x, callback){
+      let sum = x + x;
+      console.log(sum);
+      callback(sum);
+    }
+
+    add(10, function(result) {
+        add(result, function(result){
+            add(result, function(result){
+            ... 
+            }) 
+        })
+    });
+
 
 
 
