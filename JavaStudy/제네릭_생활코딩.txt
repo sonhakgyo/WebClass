@@ -1,0 +1,23 @@
+제네릭이란? 클래스 내부에서 사용할 데이터 타입을 외부에서 지정하는 기법을 의미한다.
+
+class Person<T>{
+    public T info;
+}
+public static void main(Stringp[] args) {
+    Person<String> p1 = new person<String>();
+    Person<StringBuilder> p2 = new Person<StringBuilder>();
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
