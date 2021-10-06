@@ -1,0 +1,20 @@
+01. API(Application Programming Interface)란?
+자바에서 개발자들을 위해 기본적으로 제공하는 클래스
+
+예를 들어 우리가 출력을 위해 사용했던 System.out.println() 메서드도 java.lang 패키지가 기본적으로 제공되기 때문에 사용할 수 있었던 일종의 API입니다. 자바에서 제공하는 API를 확인하고 싶다면 docs.oracle.com/javase/8/docs/api/index.html 사이트에 접속해서 API 문서를 확인할 수 있다.
+
+02. Object 클래스
+모든 클래스의 조상 클래스다. 즉, 자바의 모든 클래스는 Object 클래스를 상속받았으며 Object 클래스의 멤버를 사용한다.
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -33,5 +33,22 @@
     System.out.println(data3.hashCode()); // 64578
     System.out.println(data4.hashCode()); // 64578
 
+toString() 
+    @Override
+    public Sting toString() {
+        return this.super();  ← 재정의 할 수 있다.
+    }
 
-String 클래스
+    public static void main(String[] args) {
+        Object o = new Object();
+        System.out.println(o.toString());
+        객체명을 출력할 때, 항상 뒤에 toString()이 생략된 것이다.
+    }
+
+
+
+
+
+
+
+
