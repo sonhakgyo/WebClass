@@ -1,6 +1,7 @@
 VISUAL STUDIO CODE 단축키
 
-★  00. Ctrl + Enter : 줄로 바로 내려가기 
+    00. Shift + Enter 
+★  00. Ctrl + Enter : 아랫줄로 바로 내려가기
 ★  00. Ctrl + Shift + Enter : 윗줄로 엔터 ↔ Ctrl + Enter
     00. Ctrl + / 
     00. Ctrl + K + U : 주석 처리/해제 
