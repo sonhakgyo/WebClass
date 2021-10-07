@@ -1,0 +1,23 @@
+VISUAL STUDIO CODE 단축키
+
+★  00. Shift + Enter : 줄로 바로 내려가기 
+★  00. Ctrl + Shift + Enter : 윗줄로 엔터 ↔ Ctrl + Enter
+    00.  
+    00. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
