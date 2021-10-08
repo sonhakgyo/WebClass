@@ -5,7 +5,8 @@ VISUAL STUDIO CODE 단축키
 ★  00. Ctrl + Shift + Enter : 윗줄로 엔터 ↔ Ctrl + Enter
     00. Ctrl + / 
     00. Ctrl + K + U : 주석 처리/해제 
-★  00. Shift + Delete : 커서가 위치한 줄 삭제 
+★  00. Shift + Delete : 커서가 위치한 줄 삭제
+    00. Ctrl + D : 이클립스에서만 되고, 원래 안 지워졌는데 이제 vsc에서도 된다.
 ★  00. Ctrl + Shift + Delete : 현재 커서 위치에서 라인 끝까지 삭제
     00. Alt + 클릭 : 다중 커서(동시에 여러 곳에서 작업 실행 가능)
     00. Alt + 방향키 : 현재 행 위/아래로 이동
