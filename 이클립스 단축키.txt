@@ -27,18 +27,3 @@ Window - Preferences - General - Appearance - Part title font
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
