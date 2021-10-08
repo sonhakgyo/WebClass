@@ -17,50 +17,19 @@
         abstract 추상메서드명();
     }
 
-package shape;
-
-public abstract class Shape {
-	double area;
-	
-	abstract void showArea(double w, double h);
-	
-	/* 메서드에 final을 붙일 수 있다. 재정의는 불가능하고 사용만 할 수 있다. */
-	/* 자식 클래스에서 재정의하는 것을 막기 위함이다. */
-	final void function() {
-		System.out.println("추상 클래스의 일반 메서드입니다.");
-	}	
-}
-
-/* 추상클래스 Shape를 상속받은 후 빨간 줄이 뜨는 이유를 생각해보자. */
-class Rect extends Shape {
-	@Override
-	void showArea(double w, double h) {
-		area = w*h;
-							    	/* ²는 'ㅊ+한자'다. */
-		System.out.println("넓이 : " + area + "cm²"); 
-	}
-}
-
-/* 클래스 주제는 사각형(Rect)과 삼각형(Tri)이다. */
-class Tri extends Shape {
-	@Override
-	void showArea(double w, double h) {
-		area = (w*h) / 2;
-		System.out.println("넓이 : " + area + "cm²"); 
-	}
-}
-
 ----------------------------------------------------------------------------
 
 🎁. 추상 메서드 : 추상 메서드는 선언부만 정의하고 구체적인 내용은 비워놓은 메서드
 ✔. 주의할 점 :
-추상 메서드가 있는 클래스를 상속받는 자식클래스는 반드시 부모 클래스의 추상 메서드를 구현해야 한다. 왜냐하면 추상 메서드를 만드는 이유는 '부모 클래스에서는 굳이 만들 필요가 없을 것 같다'는 메서드를 '자식에서 구현하면 좋겠다'라고 해서 부모 클래스에서의 메서드는 비워놓고 걔를 상속받는 자식 클래스가 구현하도록 비워놓는다.
+추상 메서드가 있는 클래스를 상속받는 자식클래스는 반드시 부모 클래스의 추상 메서드를 
+구현해야 한다. 왜냐하면 추상 메서드를 만드는 이유는 '부모 클래스에서는 굳이 만들 필요가
+없을 것 같다'는 메서드를 '자식에서 구현하면 좋겠다'라고 해서 부모 클래스에서의 메서드는
+비워놓고 걔를 상속받는 자식 클래스가 구현하도록 비워놓는다.
+
 ✔. 구현 방법 :
 <구조>
     abstract 리턴타입 메서드명();
     구현하지 않으므로 {}(body) 생략하고 ; 으로 마무리한다. 
-
-
 
 🎁.추상클래스 : 추상 메서드를 멤버(필드)로 갖는 클래스
 
@@ -101,6 +70,3 @@ class Tri extends Shape {
       }
       abstract void f2(); 
     }
-
-
-
