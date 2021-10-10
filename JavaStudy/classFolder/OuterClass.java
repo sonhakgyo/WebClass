@@ -1,4 +1,4 @@
-package JavaStudy.innerClass;
+package JavaStudy.classFolder;
 
 /* 외부 클래스 선언 */
 public class OuterClass {
