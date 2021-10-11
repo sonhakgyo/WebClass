@@ -1,4 +1,4 @@
-VISUAL STUDIO CODE 단축키
+비쥬얼스튜디오코드 단축키
 
 ★  00. Shift + Enter 
 ★  00. Ctrl + Enter : 아랫줄로 바로 내려가기
