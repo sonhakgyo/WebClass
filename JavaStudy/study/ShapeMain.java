@@ -1,4 +1,4 @@
-package JavaStudy;
+package JavaStudy.study;
 
 public class ShapeMain {
   public static void main(String[] args) {
