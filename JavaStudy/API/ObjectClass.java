@@ -1,6 +1,6 @@
 package JavaStudy.API;
 
-public class Object01 {
+public class ObjectClass {
     public static void main(String[] args) {
         /* 오브젝트 클래스(=최상위 클래스, 항상 상속받고 있다.) */
 
@@ -15,17 +15,17 @@ public class Object01 {
         String data3 = "ABC";
         String data4 = "ABC";
 
-        System.out.println(data1 == data2);         // false 주소
-        System.out.println(data1.equals(data2));    // true 값
-        System.out.println(data3 == data4);         // true
-        System.out.println(data3.equals(data4));    // true
-
+        System.out.println(data1 == data2);             // false 주소
+        System.out.println(data1.equals(data2));        // true 값
+        System.out.println(data3 == data4);             // true
+        System.out.println(data3.equals(data4));        // true
+        
+    /* 💎.intern() : constant pool에서 같은 값을 검색하여 그 주소값을 반환해준다. */
         System.out.println(data1.intern() == data2);    // false
         System.out.println(data1.equals(data2));        // true
         System.out.println(data3.intern() == data4);    // true
         System.out.println(data3.equals(data4));        // true
 
-        /* 💎.intern() : constant pool에 같은 값을 검색하여 그 주소값을 반환해준다. */
 
         /* 2. hashCode() */
         /* 두 객체가 같은지 확인하는 메서드(컬렉션 수업에서 한번 더 다룰 예정). */
@@ -38,14 +38,18 @@ public class Object01 {
         System.out.println(data3.hashCode()); // 64578
         System.out.println(data4.hashCode()); // 64578
 
-        Object o = new Object();
+        /* 객체명을 출력할 때, 뒤에 toString()이 항상 생략된 것이다. */
+        ObjectClass o = new ObjectClass();
+        char[] word = {'안', '녕'};
+        /* 일반 타입과 배열 타입의 toString은 차이가 있다. */
+        System.out.println(word);
         System.out.println(o.toString());
+        System.out.println(o);
     }
-
-    /* 객체명을 출력할 때, 항상 뒤에 toString()이 생략된 것이다. */
+    
     /* toString() 오버라이딩 */
     @Override
     public String toString() {
-        return this.toString(); /* ← 재정의 할 수 있다. */
+        return super.toString(); /* ← 재정의 할 수 있다. */
     }
 }
