@@ -45,6 +45,12 @@ public class ObjectClass {
         System.out.println(word);
         System.out.println(o.toString());
         System.out.println(o);
+        
+        String wordData = "안녕";
+        /* 문자열 메서드: substring, concat, charAt, toString, equalsIgnoreCase */
+        /* 문자열을 배열처럼 접근할 때 쓰는 메서드 */
+        System.out.println(wordData.charAt(0));
+        System.out.println(wordData.charAt(1));
     }
     
     /* toString() 오버라이딩 */
