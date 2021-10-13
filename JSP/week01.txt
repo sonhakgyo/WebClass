@@ -55,6 +55,41 @@ Oracle SQL의 특징
 ---------------------------------------------------------------------------------
 
 3강 시스템(ORACLE DBMS) 관리자의 주요 명령
+    로그인: CONNECT 아이디/비밀번호;
+        예: CONNECT SYSTEM/ORACLE;
+        예: CONNECT / AS SYSDBA;
+        참고: CONNECT는 CONN으로 줄여써도 된다.
+
+    계정 확인: SHOW USER;
+    계정 생성: CREATE USER 계정명 IDENTIFIED BY 비밀번호;
+           예: CREATE USER MY_USER IDENTIFED BY 1234;
+    계정 삭제: DROP USER 아이디 CASCADE;
+    계정 권한 부여: GRANT 권한종류 TO 계정명;
+               예: GRANT DBA TO MY_USER;
+    모든 DBA의 계정, 비밀번호 조회: SELECT USERNAME FROM DBA_USERS;
+    특정 계정의 비밀번호 변경: ALTER USER 계정명 IDENTIFED BY 비밀번호;
+
+커맨드라인의 단축키
+    명령 복사하기: 드래그 후 우클릭 복사
+    명령 붙여넣기: 복사 후 커서 놓고 우클릭 붙여넣기
+    이전 명령 재실행: 화살표 위, 아래
+    화면 지우기: CL SCR; == (CLEAR SCREEN)
+    명령 히스토리: F7
+
+----------------------------------------------------------------------------------------
+
+4강 DBA의 주요 명령
+    
+DBA(DATABASE ADMINISTRATOR)란? 
+    데이터베이스 관리자, 데이터베이스를 실질적으로 관리할 수 있는 권한이다.
+    자신이 소유한 데이터베이스를 생성, 조회, 삭제, 수정할 수 있다.
+
+TABLE이란? 
+    행과 열로 구성된 데이터의 집합이다.
+
+
+
+
 
 
 
