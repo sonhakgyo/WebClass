@@ -87,7 +87,30 @@ DBA(DATABASE ADMINISTRATOR)란?
 TABLE이란? 
     행과 열로 구성된 데이터의 집합이다.
 
+자주 사용되는 데이터베이스에서의 자료형:
+    NUMBER: 정수와 실수 모두 표현 가능
+    NUMBER(p): 최대 p자리수까지 표현하는 수(p: 1~38)
+           예: NUMBER(3) ---> 최대 세자리수
+    CHAR(n): 문자열(n: 바이트 크기, 최대 2000byte)
+    VARCHAR2(n): 가변문자열(n: 바이트 크기, 최대 4000byte)
+        VARIABLE CHARACTER, 가변문자열 = 알아서 크기가 줄어든다.
+    DATE: 날짜 형식 문자열
 
+테이블 제약조건(CONSTRAINT): 필요에 의해 컬럼 선언부에 추가로 지정하는 사항 
+    NOT NULL: 필수입력
+    UNIQUE: 유일값이어야 한다(다른 레코드가 중복된 값을 가지면 안 된다).
+    PRIMARY KEY: 기본키(레코드를 식별하는 대표값)
+        NOT NULL+UNIQUE의 형태, 하나의 레코드가 여러개의 기본키를 가질 수는 없다.
+    DEFAULT[값]: 이 항목을 누락할 경우의 기본값 설정
+    CHECK(범위): 이 범위 안에서의 데이터만 저장 가능하다.
+
+DBA 관리자 명령
+    테이블 컬럼 확인(형태 확인): DESC 테이블명;
+    테이블 삭제: DROP TABLE 테이블명;
+    테이블 컬럼 추가: ALTER TABLE 테이블명 ADD(컬럼명 자료형);
+    테이블 컬럼 자료형 수정: ALTER TABLE 테이블명 MODIFY (컬럼명 NEW자료형);
+    테이블 컬럼 이름 수정: ALTER TABLE 테이블명 RENAME COLUMN 원래의 컬럼명 TO 새 컬럼명;
+    테이블 컬럼 삭제: ALTER TABLE 테이블명 DROP COLUMN 컬럼명;
 
 
 

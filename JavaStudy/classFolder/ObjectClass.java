@@ -1,4 +1,4 @@
-package JavaStudy.API;
+package JavaStudy.classFolder;
 
 public class ObjectClass {
     public static void main(String[] args) {
