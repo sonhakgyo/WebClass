@@ -1,4 +1,4 @@
-package JavaStudy.study;
+package study;
 
 public class foreach {
     public static void main(String[] args) {

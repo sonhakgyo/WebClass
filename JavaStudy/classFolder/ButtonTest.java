@@ -1,4 +1,4 @@
-package JavaStudy.classFolder;
+package classFolder;
 
 import java.awt.Button;
 import java.awt.Frame;

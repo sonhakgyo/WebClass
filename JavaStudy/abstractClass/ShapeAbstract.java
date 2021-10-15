@@ -1,4 +1,4 @@
-package JavaStudy.abstractClass;
+package abstractClass;
 
 public abstract class ShapeAbstract {
     double area;

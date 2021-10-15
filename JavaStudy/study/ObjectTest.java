@@ -1,4 +1,4 @@
-package JavaStudy.study;
+package study;
 
 public class ObjectTest {
     int data1 = 10;

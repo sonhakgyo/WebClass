@@ -9,7 +9,7 @@
 ★  00. Ctrl + Shift + F : 자동 정렬(=코드 포맷팅)
 ★  00. Ctrl + Shift + O : import문 자동 생성
     00. Alt + Shift + Z : Surround With 메뉴, 블록 드래그한 문장을 퀵 메뉴로 감싼다.
-★  00. Alt + Shift + S : 생성자 메뉴
+★  00. Alt + Shift + S : 생성자, 게터와 세터 빠른 생성 단축키
     00. Alt + Shift + R : 선택된 이름 한꺼번에 바꾸기
 ★  00. Ctri + Shift + / : 블록 주석 설정 /* */
 ★  00. Ctri + Shift + \ : 블록 주석 해제 (이클립스는 역슬래시'\'를 눌러야 해제)
