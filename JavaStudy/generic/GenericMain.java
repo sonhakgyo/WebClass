@@ -25,5 +25,11 @@ public class GenericMain {
         System.out.println(g_Integer2);
         System.out.println(g_Integer2.getData()); /* 출력: 0 */
         System.out.println(g_Integer2.getDataT());
+
+        /* GenericMethod 클래스 */
+        System.out.println(GenericMethod.functuon(11.02));
+        System.out.println(GenericMethod.functuon('Z'));
+        System.out.println(GenericMethod.functuon("하늘"));
+        System.out.println(GenericMethod.functuon(410));
     }
 }
