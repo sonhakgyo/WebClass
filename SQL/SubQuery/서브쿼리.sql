@@ -44,3 +44,28 @@
         서브쿼리의 실행 결과로 여러 칼럼을 반환한다.
         서브쿼리와 메인쿼리의 비교 연산 수행 시 비교하는 칼럼 개수와 위치가 동일해야 한다.
 
+
+
+단일행 서브쿼리
+    - 서브쿼리의 결과 건수가 반드시 1건 이하
+    - 단일행 비교 연산자(=, <, <=, >, >=, <>)와 함께 사용
+        · 결과가 2건 이상이면 RunTime 오류가 발생한다.
+    - 예: '20211021'번 선수와 같은 팀에 속하는 '선수의 이름, 포지션, 팀ID' 조회(=출력)
+    SELECT TEAM_ID
+    FROM   PLAYER
+    WHERE  PLAYER_ID = '20211021';
+
+    SELECT PLAYER_NAME, TEAM_ID
+    FROM   PLAYER
+    WHERE  TEAM_ID = 
+                    (SELECT TEAM_ID
+                     FROM   PLAYER
+                     WHERE  PLYER_ID = '20211021');
+
+
+
+
+
+
+
+
