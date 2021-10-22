@@ -185,5 +185,16 @@
     FROM   EMP A
     WHERE  (SELECT DNAME FROM DEPT WHERE DEPTNO = A.DEPTNO) = 'SALES';
     
+    - 스칼라 서브쿼리는 함수의 인자로도 사용 가능하다.
+    - 예: 앞페이지의 상단 질의를 수정하여 부서명을 3글자만 출력하는 질의 작성(SUBSTR 함수 사용)
+    SELECT EMPNO, ENAME, SUBSTR((SELECT DNAME FROM EDPT WHERE DEPTNO = A.DEPTNO), 1 ,3)
+    FROM   EMP A;
+
+
+
+
+
+
+
 
 
