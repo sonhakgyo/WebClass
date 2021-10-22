@@ -17,7 +17,7 @@
         SELECT절
         WHERE절
         FROM절 -> FROM절에 있는 서브쿼리를 인라인 뷰(Inline View)라고 부른다.
-                  뷰와 비슷하지만 조금 다르다고 한다.
+　                뷰와 비슷하지만 조금 다르다고 한다.
 
 결과 칼럼/행의 수
         단일행 서브쿼리 / 다중행 서브쿼리
@@ -58,8 +58,8 @@
     SELECT PLAYER_NAME, TEAM_ID
     FROM   PLAYER
     WHERE  TEAM_ID = (SELECT TEAM_ID
-                      FROM   PLAYER
-                      WHERE  PLYER_ID = '20211021');
+　                    FROM   PLAYER
+　                    WHERE  PLYER_ID = '20211021');
 
 
 다중행 서브쿼리
@@ -87,8 +87,8 @@
     SELECT PLAYER_NAME, HEIGHT, BACK_NO
     FROM   PLAYER
     WHERE  HEIGHT IN (SELECT HEIGHT
-                      FROM   PLAYER
-                      WHERE  BACK_NO = 15);
+　                    FROM   PLAYER
+　                    WHERE  BACK_NO = 15);
 
     
     ALL 연산자
@@ -101,8 +101,8 @@
     SELECT PLAYER_NAME, HEIGHT, BACK_NO
     FROM   PLAYER
     WHERE  HEIGHT > ALL (SELECT HEIGHT
-                         FROM   PLAYER
-                         WHERE  BACK_NO = 15);
+　                       FROM   PLAYER
+　                       WHERE  BACK_NO = 15);
 
 
     ANY(=SOME) 연산자
@@ -112,8 +112,8 @@
     SELECT PLAYER_NAME, HEIGHT, BACK_NO
     FROM   PLAYER
     WHERE  HEIGHT >= ANY (SELECT HEIGHT
-                          FROM   PLAYER
-                          WHERE  BACK_NO = 15);
+　                        FROM   PLAYER
+　                        WHERE  BACK_NO = 15);
 
 
     EXISTS 연산자
@@ -123,14 +123,14 @@
     SELECT PLAYER_NAME, HEIGHT, BACK_NO
     FROM   PLAYER
     WHERE  EXISTS (SELECT HEIGHT
-                   FROM   PLAYER
-                   WHERE  BACK_NO = 15);
+　                 FROM   PLAYER
+　                 WHERE  BACK_NO = 15);
     =
     SELECT PLAYER_NAME, HEIGHT, BACK_NO
     FROM   PLAYER
     WHERE  EXISTS (SELECT 1 
-                   FROM PLAYER
-                   WHERE BACK_NO = 15);
+　                 FROM PLAYER
+　                 WHERE BACK_NO = 15);
 
 
 연관(Correlated) 서브쿼리
@@ -140,8 +140,8 @@
     SELECT ENAME, SALARY, DEPTNO
     FROM   EMP M
     WHERE  SALARY > (SELECT AVG(S.SALARY)
-                     FROM   EMP S
-                     WHERE  M.DEPTNO = S.DEPTNO);
+　                   FROM   EMP S
+　                   WHERE  M.DEPTNO = S.DEPTNO);
     * 메인쿼리에서 EMP M을 서브쿼리에 전달
     * 서브쿼리에서 EMP M과 같은 부서인 EMP S의 평균 급여를 계산하여 메인쿼리에 전달
     * 메인쿼리에서 EMP M의 급여와 서브쿼리에서 전달받은 급여를 비교
@@ -162,8 +162,8 @@
     SELECT PLAYER_NAME, HEIGHT, POSITION, BACK_NO
     FROM   PLAYER
     WHERE  (HEIGHT, POSITION) = (SELECT HEIGHT, POSITION
-                                 FROM   PLAYER
-                                 WHERE  PLAYER_ID = '20211021');
+　                               FROM   PLAYER
+　                               WHERE  PLAYER_ID = '20211021');
 
 
 스칼라 서브쿼리(Scalar Subquery)
