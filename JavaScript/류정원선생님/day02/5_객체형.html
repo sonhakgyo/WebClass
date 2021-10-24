@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체형</title>
+</head>
+
+<body>
+    <h2>객체형</h2>
+    <script>
+        'use strict';
+        const rucy = { "name": "루시", "age": 11, "weight": 3.5 };
+        console.log(rucy);
+        // document.write(rucy);
+        console.log(`이름 : ${rucy.name}`);
+        console.log(`나이 : ${rucy.age}`);
+        console.log(`몸무게 : ${rucy.weight}`);
+
+        document.write(`이름 : ${rucy.name}<br>`);
+        document.write(`나이 : ${rucy.age}<br>`);
+        document.write(`몸무게 : ${rucy.weight}<br>`);
+
+        // const rucy = {};
+        rucy.weight = 4.0;
+        console.log(`최근 몸무게 : ${rucy.weight}`);
+
+    </script>
+</body>
+
+</html>
