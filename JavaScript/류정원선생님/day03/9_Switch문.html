@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch문</title>
+</head>
+
+<body>
+    <h2>switch문</h2>
+    <script>
+        'use strict';
+        const select = prompt('유아, 어린이, 청소년, 성인 중 선택하세요');
+
+        let price = "";
+        switch (select) {
+            case '유아':
+                price = "입장료 무료";
+                break;
+            case '어린이':
+                price = "입장료 : 2000원";
+                break;
+            case '청소년':
+                price = "입장료 : 5000원";
+                break;
+            case '성인':
+                price = "입장료 : 10000원";
+                break;
+            default:
+                alert('입력값을 확인하세요');
+                price = '입력값 오류!';
+        }
+        console.log(price);
+    </script>
+</body>
+
+</html>
