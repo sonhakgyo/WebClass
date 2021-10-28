@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자</title>
+</head>
+
+<body>
+    <h2>생성자</h2>
+    <script>
+        'use strict';
+        function Car(name, color) {
+            this.name = name;
+            this.color = color;
+            this.go = function () {
+                return `${this.name}이(가) 앞으로 갑니다`;
+            }
+        }
+
+        const car1 = new Car('소나타', '흰색');
+        console.log(car1.name);
+        console.log(car1.color);
+        console.log(car1.go());
+
+        const car2 = new Car('그랜저', '검정색');
+        console.log(car2.name);
+        console.log(car2.color);
+        console.log(car2.go());
+    </script>
+</body>
+
+</html>
