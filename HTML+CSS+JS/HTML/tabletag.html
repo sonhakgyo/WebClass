@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>목록 태그</title>
 </head>
-
 <body>
     <!-- header 태그 -->
     <header>
-        <h1>목록 태그</h1>
+        <h1>테이블 태그</h1>
     </header>
     <hr>
     <!-- nav 태그 -->
@@ -22,6 +20,8 @@
             <li><a href="linktag.html">링크태그 페이지 이동</a></li>
             <li><a href="listtag.html">목록태그 페이지 이동</a></li>
             <li><a href="tabletag.html">테이블태그 페이지 이동</a></li>
+            <li><a href="공간분할태그.html">공간분할태그 페이지 이동</a></li>
+            <li><a href="오디오비디오태그.html">오디오/비디옽태그 페이지 이동</a></li>
         </ol>
     </nav>
     <hr>
@@ -165,6 +165,8 @@
     <hr>
 
     <h2 align="center">가로(colspan) 세로(rowspan)  합치기</h2>
+    <h3 align="center">1. 행, 열별로 합쳐보기</h3>
+    <h3 align="center">2. 칸마다 색 입혀보기</h3>
     <!-- 
     1.합치기 방법
         가로 합치기 = colspan
@@ -173,8 +175,10 @@
         colspan = 개수
         rowspan = 개수 
     3.합쳐지는 칸(td)는 삭제된다.
+    4.thead, tbody, tfoot으로 묶을 수 있다.
     -->
     <table align="center" width="400" height="400" border="1" cellspacing="0">
+        <caption><strong>테이블의 제목</strong></caption>
         <tr>
             <td colspan="2"></td>
             <td></td>
@@ -198,3 +202,5 @@
             <td colspan="3"></td>
         </tr>
     </table>
+</body>
+</html>

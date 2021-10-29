@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오/비디오 태그</title>
+</head>
+
+<body>
+    <!-- header 태그 -->
+    <header>
+        <h1>오디오/비디오 태그</h1>
+    </header>
+    <hr>
+    <!-- nav 태그 -->
+    <nav>
+        <ol>
+            <li><a href="index.html">첫페이지 이동</a></li>
+            <li><a href="wordtag.html">문자태그 페이지 이동</a></li>
+            <li><a href="linktag.html">링크태그 페이지 이동</a></li>
+            <li><a href="listtag.html">목록태그 페이지 이동</a></li>
+            <li><a href="tabletag.html">테이블태그 페이지 이동</a></li>
+            <li><a href="공간분할태그.html">공간분할태그 페이지 이동</a></li>
+            <li><a href="오디오비디오태그.html">오디오/비디옽태그 페이지 이동</a></li>
+        </ol>
+    </nav>
+
+    <hr> <!-- -------------------------------------------------------------- -->
+    
+    <p>나루토 동천.mp3</p>
+    <div><audio src="나루토.동천.mp3" controls="auto" preload="none" volume="0.5"></audio></div>
+    <p>나루토 동천.mp3</p>
+    <div><audio src="나루토.동천.mp3" contorls="controls" preload="none"></audio></div>
+    <p>나루토 동천.mp3</p>
+    <div><audio src="나루토.동천.mp3" controls preload="none"></audio></div>
+    <p>원피스 Dear Friends.mp3</p>
+    <div><audio src="원피스_김명준_Dear Friends.mp4" controls="auto"></audio></div>
+    
+    <hr> <!-- -------------------------------------------------------------- -->
+    <p>audio controls="auto" preload="none" loop="loop"</p>
+    <audio controls="auto" preload="none" loop="loop">
+        <source src="나루토.동천.mp3" type="audio/mp3">
+        <!-- 아래는 'mp3'가 아닌 'mp4'라서 실행이 안 되는 걸까? -->
+        <source src="원피스_김명준_Dear Friends.mp4" type="audio/mp4">
+        <source src="원피스_김명준_Dear Friends.mp4" type="audio/mp3">
+        <source src="원피스_김명준_Dear Friends.mp4">
+    </audio>
+    
+    <p>audio contorls="auto" preload="none"</p>
+    <P>실행 안됨</P>
+    <audio contorls="auto" preload="none">
+        <source src="원피스_김명준_Dear Friends.mp4">
+    </audio>
+
+    <hr>
+
+    <video width="450" height="300" src="원피스_김명준_Dear Friends.mp4" controls="controls" volume="0"></video>
+    
+</body>
+</html>
