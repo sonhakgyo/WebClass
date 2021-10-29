@@ -48,7 +48,7 @@
         <h2>회원가입2</h2>
         <fieldset disabled form="form_name" name="fieldset_name">
             <legend>개인정보2</legend>
-            이름 : <input type="text" value="이름을 입력하세요">
+            이름 : <input type="text" placeholder="이름을 입력하세요">
             나이 : <input type="text" value="나이를 입력하세요">
             암호 : <input type="password" value="비밀번호를 입력하세요">
             지역 : <input type="text" value="사는 곳을 입력하세요">
@@ -69,14 +69,21 @@
     <p><b>range</b>  : 숫자 조절 슬라이드 막대</p>
     <p><b>color</b>  : 색상표</p>
     <p><b>checkbox</b> : 다중 선택이 가능한 체크박스</p>
+    <input type="checkbox" id="checkbox1"><label for="checkbox1">체크박스1</label>
+    <input type="checkbox">체크박스2
     <p><b>radio</b>  : 단일 선택만 가능한 라디오 버튼</p>
     <p><b>datetime</b> : 국제 표준시로 설정된 날짜와 시간(연, 월, 일, 시, 분, 초)</p>
     <p><b>datetime-local</b> : 사용자가 있는 지역을 기준으로 날짜와 시간</p>
     <p><b>date</b>   : 사용자가 있는 지역을 기준으로 날짜(연, 월, 일)</p>
     <p></p>
+    <p>input type="타입형태" name="input태그의 이름" value="서버로 넘기는 값"</p>
     
     <hr>
     
-    <p>input type="타입형태" name="input태그의 이름" value="서버로 넘기는 값"</p>
+    <h2>라디오 버튼과 name, id와 label for</h2>
+    <input type="radio" id="black" name="color"><label for="black">검은색</label>
+    <input type="radio" id="white" name="color"><label for="white">하늘색</label>
+    <input type="radio" id="sky" name="color"><label for="sky">하얀색</label>
+    <input type="radio" id="blue" name="color"><label for="blue">푸른색</label>
 </body>
 </html>
