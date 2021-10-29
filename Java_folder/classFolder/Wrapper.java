@@ -1,4 +1,4 @@
-package classFolder;
+package Java_folder.classFolder;
 
 /*
 Wrapper 클래스를 사용하는 이유 :

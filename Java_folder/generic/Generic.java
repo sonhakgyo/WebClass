@@ -1,4 +1,4 @@
-package generic;
+package Java_folder.generic;
 
 /* 클래스 이름 뒤에 '제네릭'이 붙는다. */
 public class Generic<T> {
@@ -23,5 +23,13 @@ public class Generic<T> {
 	}
 	public void setData(T dataT) {
 		this.dataT = dataT;
+	}
+	public static class Single {
+        public static Single getInstance() {
+            return null;
+        }
+
+        public void sayHello() {
+        }
 	}
 }

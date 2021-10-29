@@ -1,4 +1,4 @@
-package generic;
+package Java_folder.generic;
 
 public class Single {
     /* 복습 */

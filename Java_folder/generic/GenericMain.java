@@ -1,4 +1,4 @@
-package generic;
+package Java_folder.generic;
 
 /* raw */
 /* 1. 익히지 않은, 날것의 */

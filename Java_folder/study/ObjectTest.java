@@ -1,4 +1,4 @@
-package study;
+package Java_folder.study;
 
 public class ObjectTest {
     int data1 = 10;

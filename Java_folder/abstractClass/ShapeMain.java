@@ -1,4 +1,4 @@
-package abstractClass;
+package Java_folder.abstractClass;
 
 public class ShapeMain {
     public static void main(String[] args) {

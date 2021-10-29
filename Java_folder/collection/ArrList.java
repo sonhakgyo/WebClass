@@ -1,4 +1,4 @@
-package collection;
+package Java_folder.collection;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,7 +15,7 @@ import java.util.Collections;
 	
 	배열: 속도가 빠르지만 고정된 메모리양으로 인해서 나중에 늘릴 수가 없다.
 	ArrayList: 배열보다 느리지만 메모리양을 맘대로 늘리고 줄일 수 있다.
-			   정확히는 기존의 배열이 5칸이라면 6칸 배열의 주소로 이동한다.
+　			   정확히는 기존의 배열이 5칸이라면 6칸 배열의 주소로 이동한다.
 */
 public class ArrList {
 	public static void main(String[] args) {

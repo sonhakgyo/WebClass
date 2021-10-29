@@ -1,4 +1,4 @@
-package classFolder;
+package Java_folder.classFolder;
 
 /* 외부 클래스 선언 */
 public class OuterClass {

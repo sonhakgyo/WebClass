@@ -1,4 +1,4 @@
-package abstractClass;
+package Java_folder.abstractClass;
 
 public abstract class ShapeAbstract {
     double area;

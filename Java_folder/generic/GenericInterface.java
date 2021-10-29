@@ -1,4 +1,4 @@
-package generic;
+package Java_folder.generic;
 
 public interface GenericInterface<N1, N2> {
     /* abscract 생략 가능 */

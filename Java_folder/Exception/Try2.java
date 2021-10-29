@@ -1,4 +1,4 @@
-package Exception;
+package Java_folder.Exception;
 
 public class Try2 {
     public static void main(String[] args) {
