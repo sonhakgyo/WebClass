@@ -5,13 +5,13 @@ public class GenericMethod {
     public static <T> T functuon(T data) {
         T resultT;
         if (data instanceof Integer) {
-            resultT = (T) "정수"; /* 강제형변환 */
+            resultT = (T)"정수"; /* 강제형변환 */
         } else if (data instanceof Double || data instanceof Float) {
-            resultT = (T) "실수"; /* 강제형변환 */
+            resultT = (T)"실수"; /* 강제형변환 */
         } else if (data instanceof Character) {
-            resultT = (T) "문자"; /* 강제형변환 */
+            resultT = (T)"문자"; /* 강제형변환 */
         } else if (data instanceof String) {
-            resultT = (T) "문자열"; /* 강제형변환 */
+            resultT = (T)"문자열"; /* 강제형변환 */
         } else {
             resultT = null;
         }

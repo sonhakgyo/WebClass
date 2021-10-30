@@ -1,4 +1,4 @@
-package Java_folder.set;
+package Java_folder.Set_Map;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -17,7 +17,7 @@ public class WhySet {
         final int data = 9_000_000;
 
         /* 순차 병렬 집계연산 */
-        IntStream.range(0, SIZE).forEach(value ->{
+        IntStream.range(0, SIZE).forEach(value -> {
             arrayList.add(value);
             hashSet.add(value);
         });

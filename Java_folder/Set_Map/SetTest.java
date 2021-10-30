@@ -1,4 +1,4 @@
-package Java_folder.set;
+package Java_folder.Set_Map;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -38,6 +38,5 @@ public class SetTest{
         while(iter.hasNext()) {
             System.out.println(iter.next());
         }
-
     }
 }
