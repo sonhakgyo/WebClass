@@ -1,18 +1,15 @@
-SELECTOR 선택자
+CSS 스타일이란?
+    Cascading Style Sheets
 
-선택자의 우선순위 
-선택자 패턴에서의 우선순위 적용 규칙
-    !important > 인라인 스타일(style=" ") > #id > .class > Tag > *(전체선택자)
-
-
-
+선언문
+    선택자   {   속성    :  값;   }
+    Selecotr { Property : Value; }
 
 
-
-
-
-
-
-
-
-
+스타일문법 종류
+    · 인라인 스타일
+    · 내부 스타일시트
+        - <STYLE> 태그를 사용하여 HTML 문서에 바로 적용하는 방법
+    · 외부 스타일시트
+        - 외부에 작성된 .CSS 문서 즉, 스타일시트 파일을 연결하는 방법
+    
