@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Document</title>
+    <style>
+        html {
+            border: 1px solid gray;
+        }
+        div {
+            border: 5px solid tomato;
+            margin: 10px;
+        }
+        #me {
+            position: static;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- 
+    엘리먼트의 위치를 지정하는 4가지 방법
+    position:
+        - static
+        - relative
+        - absolute
+        - fixed
+    -->
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>    
+    </div>
 </body>
 </html>
