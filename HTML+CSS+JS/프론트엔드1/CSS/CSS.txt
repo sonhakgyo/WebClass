@@ -1,10 +1,8 @@
-CSS 스타일이란?
-    Cascading Style Sheets
-
-선언문
+CSS(Cascading Style Sheets) 스타일이란?
+    
+head 태그 안에서 선언문
     선택자   {   속성    :  값;   }
     Selecotr { Property : Value; }
-
 
 스타일문법 종류
     · 인라인 스타일
