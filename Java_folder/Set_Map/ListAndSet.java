@@ -7,9 +7,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.IntStream;
-
-public class ListAndSet {
-    public static void main(String[] args) {
+/* 클래스 타입은 보라색 */
+/* 인터페이스는 남색 */
+public class ListAndSet {     public static void main(String[] args) {
         final int SIZE = 10_000_000;
         final List<Integer> arrayList = new ArrayList<>(SIZE);
         final Set<Integer> hashSet = new HashSet<>(SIZE);
