@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./member.ico">
+    <title>회원가입</title>
+</head>
+
+<body>
+    <h2>회원가입</h2>
+    <form action="regist_ok.php" method="post">
+        <p><label>아이디 : <input type="text" name="userid" id="userid" maxlength="20" size="20"
+                    placeholder="아이디를 입력하세요"></label></p>
+        <p><label>비밀번호 : <input type="password" name="userpw" id="userpw" maxlength="20" size="20"
+                    placeholder="비밀번호를 입력하세요"></label></p>
+        <p><label>비밀번호 확인 : <input type="password" name="userpw_re" id="userpw_re" maxlength="20" size="20"
+                    placeholder="비밀번호 확인을 입력하세요"></label></p>
+        <p><label>이름 : <input type="text" name="name" id="name" maxlength="20" size="20"
+                    placeholder="이름을 입력하세요"></label></p>
+        <p><label>휴대폰 번호 : <input type="text" name="hp" id="hp" maxlength="20" size="20"
+                    placeholder="휴대폰번호를 입력하세요"></label></p>
+        <p><label>이메일 : <input type="text" name="email" id="email" maxlength="50" size="20"
+                    placeholder="이메일을 입력하세요"></label></p>
+        <p>성별 : <label>남자<input type="radio" name="gender" value="남자" checked></label> <label>여자<input type="radio"
+                    name="gender" value="여자"></label></p>
+        <p>취미 :
+            <label>코딩<input type="checkbox" name="hobby" value="코딩"></label>
+            <label>스쿼시<input type="checkbox" name="hobby" value="스쿼시"></label>
+            <label>운동<input type="checkbox" name="hobby" value="운동"></label> <label>놀기<input type="checkbox"
+                    name="hobby" value="놀기"></label> <label>게임<input type="checkbox" name="hobby" value="게임"></label>
+        </p>
+        <p>주민등록번호 : <input type="text" name="ssn1" id="ssn1" size="6" maxlength="6"> - <input type="text" name="ssn2"
+                id="ssn2" size="7" maxlength="7"> <input type="button" value="검증"></p>
+        <p>우편번호 : <input type="text" name="zipcode" size="5" maxlength="5" readonly> <input type="button"
+                value="우편번호 검색"></p>
+        <p>주소 : <input type="text" size="30" name="address1" placeholder="주소를 입력하세요"></p>
+        <p>상세주소 : <input type="text" size="30" name="address2" placeholder="상세주소를 입력하세요"></p>
+        <p>참고항목 : <input type="text" size="30" name="address3" placeholder="참고항목을 입력하세요"></p>
+        <p><input type="submit" value="가입완료"> <input type="reset" value="다시작성"></p>
+    </form>
+</body>
+
+</html>

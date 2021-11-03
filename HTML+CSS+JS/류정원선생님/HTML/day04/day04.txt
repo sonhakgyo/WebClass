@@ -1,0 +1,151 @@
+아이프레임 <iframe>
+    - inline frame의 약자
+    - iframe을 이용하면 웹페이지 안에 또 다른 웹페이지를 삽입할 수 있음
+
+    <iframe src="삽입할 페이지의 주소 또는 문서위치" style="크기를 설정할 css 코드"></iframe>
+
+🎁 target 속성
+    _blank : 링크로 연결된 문서를 새탭에서 열어줌
+    이름 : 해당 이름으로 설정된 페이지에서 문서를 열어줌
+
+
+폼 <form>
+    - 웹 페이지에서 사용자로부터 입력을 받을 때 사용하는 태그
+    - 사용자가 입력한 데이터를 서버로 보낼 때 form 요소를 사용
+    - action속성은 서버로 데이터를 전송, method속성은 전송방법을 설정
+        ✔ method 속성
+            * post : body에 데이터를 저장하여 전송하는 방식
+            * get : URL에 데이터를 저장하여 전송하는 방식
+
+입력상자 <input>
+
+- type 속성
+    text     : 문자를 입력받는 글상자
+    password : 비밀번호를 입력받는 글상자
+    radio    : 여러개의 옵션 중에서 단 하나의 옵션만을 입력받을 수 있도록 하는 버튼
+        ✔ radio는 그룹을 맺기 위해 name 속성의 값이 동일해야 합니다!
+    checkbox : 여러개의 옵션 중에서 다수의 옵션을 입력받을 수 있도록 하는 버튼
+    file     : 원하는 파일을 서버로 전송하기 위한 글상자
+    button   : 이벤트가 없는 일반 버튼 -> <button></button> (기본:submit)
+    reset    : 입력받은 데이터를 초기화 하는 버튼
+    submit   : 입력받은 데이터를 서버에 제출하는 버튼
+        ✔ form의 action속성에 설정한 파일로 데이터를 전송
+    email    : 이메일을 입력받는 글상자 (@필요)
+    url      : 웹사이트를 입력받는 글상자 (http부터 시작된 URL)
+    tel      : 전화번호를 입력받는 글상자 (숫자 키패드를 사용)
+    date     : 원하는 날짜를 입력받는 글상자
+    number   : 원하는 숫자를 입력받는 글상자
+        <input type="number" min="최소값" max="최대값" step="증가값">
+    color    : 원하는 색상을 입력받는 요소
+        ✔ 선택한 색상은 16진수 RGB컬러 값으로 전달
+        0 1 2 3 4 5 6 7 8 9 a b c d e f 
+
+        Red Green Blue
+        ff    ff    ff => 흰색
+        00    00    00 => 검정색
+        ff    00    00 => 빨간색
+        #ff0000 빨간색
+    search   : 검색어를 입력받는 글상자
+    range    : 일정 범위안에 값만을 입력하는 조절바
+            <input type="range" min="최소값" max="최대값" value="현재값">
+
+
+선택상자 <select>
+    - 여러개의 옵션이 드롭다운 리스트로 되어 있으며 그 중에서 단 하나의 옵션만을 입력받을 수 있음
+    - <option> 요소를 통해 선택할 수 있는 아이템을 설정
+
+    <select>
+        <option>내용</option>
+        ...
+    </select>
+
+여러줄 글상자 <textarea>
+    - 여러줄의 텍스트를 입력받는 글상자
+    <textarea cols="가로 글자수" rows="세로 글자수"></textarea>
+
+그룹 <fieldset>
+    - 폼 요소를 그룹으로 묶을 때 사용
+
+그룹 제목 <legend>
+    - fieldset의 제목을 만들 때 사용
+
+데이터 목록 <datalist>
+    - 미리 지정된 옵션 목록을 보여줌
+    - 특정 글자를 입력하면 해당하는 지정된 글자를 미리 보여줌
+
+    <input type="text" list="datalist의 id값">
+
+    <datalist id="값">
+            <option value="실제값" label="값"></option>
+            ...
+    </datalist>
+
+
+라벨 <label>
+    - 폼 양식에 이름을 붙이는 요소
+    - label 요소와 다른 요소를 연결하면 해당 영역이 넓어짐
+    - radio 또는 checkbox를 스타일 설정
+
+
+size 속성
+    - 크기를 설정하는 속성
+
+maxlength 속성
+    - 값의 최대 길이를 설정하는 속성
+
+placeholder 속성
+    - 입력전 특정 데이터를 입력하도록 안내하는 값을 설정
+
+checked 속성
+    - 여러개의 라디오 또는 체크박스 중에서 미리 선택하는 옵션을 설정
+
+readonly 속성
+    - 데이터를 볼 수 있으나 수정할 수 없게 설정
+
+value 속성
+    - 입력양식의 값을 설정하는 속성
+
+disabled 속성
+    - 입력필드를 사용할 수 없게 설정하는 속성
+
+required 속성
+    - 데이터를 필수로 입력하도록 지정하는 옵션
+
+name 속성
+    - 요소의 이름을 설정
+    - 서버에서 값을 전달 받을 때 키로 사용
+
+id 속성
+    - 요소의 유일한 이름을 설정
+    - HTML문서에서 해당 요소의 스타일을 주거나 동적인 프로그래밍을 할 때 사용
+
+
+🎁 파비콘(Favicon) 만들기
+    - Favorites Icon의 줄임말
+    - 웹브라우저 주소창 옆에 작은 아이콘으로 표기
+    - 16 * 16 픽셀이 기본규격
+    - <head></head>안에 아래와 같이 적용
+
+    <link rel="icon" href="파일경로">
+
+png 파일을 icon 파일로 변환
+https://convertico.com/
+
+
+HTML의 디스플레이 속성
+    - inline 태그
+        * content 크기 만큼 자리를 차지하는 요소
+        * 문자(텍스트)의 특징
+        * span, img
+    - block 태그
+        * 라인을 모두 차지하는 요소
+        * 면의 특징
+        * div, ul, li, h...
+
+과제.
+    즐겨찾는 사이트 소개(favorites.html)
+
+    index.html
+
+    이력서 / 즐겨찾기는 사이트
+    resume.html  favorites.html 
