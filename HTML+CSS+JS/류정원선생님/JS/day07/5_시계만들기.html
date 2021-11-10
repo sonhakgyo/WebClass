@@ -18,11 +18,9 @@
         function startClock() {
             timeId = setInterval(printTime, 1000);
         }
-
         function stopClock() {
             clearInterval(timeId);
         }
-
         function printTime() {
             const today = new Date();
             const hh = today.getHours();
