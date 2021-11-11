@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인접 형제 선택자</title>
     <style>
-        h3+p {
+        h3 + p {
             color: white;
             background-color: deeppink;
             font-size: 20px;
@@ -17,9 +17,12 @@
     <h2>인접 형제 선택자</h2>
     <div>
         <h3>첫째</h3>
+        <!-- h3+p : h3은 적용이 안 되었고 p태그의 둘째가 적용이 되었다. -->
         <p>둘째</p>
         <a href="#">셋째</a>
         <h4>넷째</h4>
+        <!-- h3+p : h3은 적용이 안 되었고 p태그의 다섯째는 적용이 안 되었다. -->
+        <p>다섯째</p>
     </div>
 </body>
 </html>
