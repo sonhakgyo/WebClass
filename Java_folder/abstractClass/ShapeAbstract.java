@@ -13,6 +13,7 @@ public abstract class ShapeAbstract {
 }
 
 /* 추상클래스 Shape를 상속받은 후 빨간 줄이 뜨는 이유를 생각해보자. */
+/* 클래스 주제는 사각형(Rect)과 삼각형(Tri)이다. */
 class Rect extends ShapeAbstract {
     @Override
     void showArea(double w, double h) {
