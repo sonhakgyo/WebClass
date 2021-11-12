@@ -1,0 +1,83 @@
+align-items
+- 플렉스 요소의 수직방향 정렬 방식을 설정
+- stretch : 기본설정. 플렉스 요소의 높이가 컨테이너의 높이와 같게 변경된 뒤 연이어 배치됨
+- flex-start : 플렉스 요소는 플렉스 컨테이너의 위쪽에 배치됨
+- flex-end : 플렉스 요소는 플렉스 컨테이너의 아래쪽에 배치됨
+- center : 플렉스 요소는 플렉스 컨테이너의 가운데 배치됨
+- baseline : 플렉스 요소는 플레스 컨테이너의 기준선에 배치됨
+
+align-self
+- 플렉스 요소마다 서로 다른 align 속성값을 설정
+
+order
+- 플렉스 요소들의 순서를 설정
+
+flex-grow
+- 플렉스 컨테이너 아이템들이 차지할 너비들에 대한 증가형 숫자를 지정
+
+flex-shrink
+- 플렉스 컨테이너 아이템들이 차지할 너비들에 대한 감소형 숫자를 지정
+
+flex-basis
+- 플렉스 컨테이너 아이템의 길이를 지정
+
+flex
+- flex의 속성을 한꺼번에 설정
+- flex flex-grow flex-shrink flex-basis
+
+미디어쿼리
+- width, height, color, ... 속성과 같은 미디어 관련 표현식을 통해 스타일이 적용되는 범위를 조절
+- 컨텐츠를 별도로 변경하지 않아도 웹 페이지 접속하고 있는 기기에 알맞은 형태로 스타일을 조절
+
+@media 매체유형 and (min-width: 해상도){
+    ...
+}
+
+
+✔ 매체유형
+- all : 모든 매체
+- screen : 컴퓨터, 태블릿, 스마트폰 ..
+- print : 프린터 기기
+- speech : 스크린 리더
+
+
+🎁 상대적인 크기를 정하는 em과 rem
+- em 단위는 상위 요소 크기의 몇 배인지로 크기를 설정
+
+    <div>   2em
+        <div>1</div>  1em = 32px
+    </div>
+
+- rem 단위는 문서의 최상위 요소, 즉 html 요소의 크기의 몇 밴인지로 크기를 설정
+
+
+
+CSS 2D
+transform
+- 이차원 좌표에서 요소를 변형시키는 속성
+- 이동(translate), 확대(scale), 축소(scale), 회전(rotate), 경사(skew)등을 만들 수 있음
+
+🎁 벤더 프리픽스(vender prefix)
+- 주요 웹 브라우저 공급자가 새로운 실험적인 기능을 제공할 때 이전 버전의 웹 브라우저에 그 사실을 알리기 위해 사용하는 접두사를 의미
+- 아직 CSS 권고안에 포함되지 않은 기능이나, 포함되어 있지만 아직 완벽하게 제정된 상태가 아닌 기능을 사용할 때
+
+linear-gradient(방향, 색상1, 색상2)
+
+#gradient {
+    /* 속성을 지원하지 않는 브라우저를 위한 코드 */
+    background: red;
+    /* 크롬,엣지를 위한 코드 */
+    background: -webkit-linear-gradient(right, yellow, blue);
+    /* 오페라를 위한 코드 */
+    background: -o-linear-gradient(right, yellow, blue);
+    /* 익스플로러를 위한 코드 */
+    background: -ms-linear-gradient(right, yellow, blue);
+    /* 파이어폭스를 위한 코드 */
+    background: -moz-linear-gradient(right, yellow, blue);
+    /* CSS 표준 문법을 위한 코드 */
+    background: linear-gradient(right, yellow, blue);
+}
+
+<div id="gradient"></div>
+
+✔ 벤더 프리픽스를 사용하는 방법은 해당 속성이 적용되지 않았을 경우 표현해야 할 코드를 가장 먼저 작성해야 하며, 표준 문법 코드는 가장 마지막에 작성해야 함
