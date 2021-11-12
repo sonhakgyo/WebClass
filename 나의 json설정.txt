@@ -225,7 +225,7 @@
             {
                 "scope": ["entity.other.attribute-name.html"],
                 "settings": {
-                    "foreground": "#2fce44",
+                    "foreground": "#C584FA",
                     "fontStyle": "italic"
                 }
             },
@@ -239,7 +239,7 @@
             {
                 "scope": ["string.quoted.double.html"],
                 "settings": {
-                    "foreground": "#c584fa",
+                    "foreground": "#2FCE44",
                 }
             },
             {
@@ -343,3 +343,7 @@
     },
     "workbench.iconTheme": "material-icon-theme"
 }
+
+
+
+

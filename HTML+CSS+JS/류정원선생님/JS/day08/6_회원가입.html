@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,14 +13,17 @@
                     // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
 
                     // 각 주소의 노출 규칙에 따라 주소를 조합한다.
-                    // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
-                    var addr = ''; // 주소 변수
+                    // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로 
+                    // 이를 참고하여 분기한다.
+                    var addr = '';      // 주소 변수
                     var extraAddr = ''; // 참고항목 변수
 
                     //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
-                    if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    if (data.userSelectedType === 'R') { 
+                        // 사용자가 도로명 주소를 선택했을 경우
                         addr = data.roadAddress;
-                    } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    } else { 
+                        // 사용자가 지번 주소를 선택했을 경우(J)
                         addr = data.jibunAddress;
                     }
 
@@ -58,33 +60,80 @@
     </script>
     <script src='./js/regist.js'></script>
 </head>
-
 <body>
     <h2>회원가입</h2>
     <form name="regform" id="regform" method="post" action="regist_ok.php" onsubmit="return sendit()">
         <input type="hidden" name="isssn" id="isssn" value="n">
-        <p><label>아이디 : <input type="text" name="userid" id="userid" maxlength="20"></label></p>
-        <p><label>비밀번호 : <input type="password" name="userpw" id="userpw" maxlength="20"></label></p>
-        <p><label>비밀번호 확인 : <input type="password" name="userpw_re" id="userpw_re" maxlength="20"></label></p>
-        <p><label>이름 : <input type="text" name="name" id="name"></label></p>
-        <p><label>휴대폰 번호 : <input type="text" name="hp" id="hp"></label></p>
-        <p><label>이메일 : <input type="text" name="email" id="email"></label></p>
-        <p>취미 : <label>드라이브<input type="checkbox" name="hobby" value="드라이브"></label>
+        <p>
+            <label>
+                아이디 : <input type="text" name="userid" id="userid" maxlength="20">
+            </label>
+        </p>
+        <p>
+            <label>
+                비밀번호 : <input type="password" name="userpw" id="userpw" maxlength="20">
+            </label>
+        </p>
+        <p>
+            <label>
+                비밀번호 확인 : <input type="password" name="userpw_re" id="userpw_re" maxlength="20">
+            </label>
+        </p>
+        <p>
+            <label>
+                이름 : <input type="text" name="name" id="name">
+            </label>
+        </p>
+        <p>
+            <label>
+                휴대폰 번호 : <input type="text" name="hp" id="hp">
+            </label>
+        </p>
+        <p>
+            <label>
+                이메일 : <input type="text" name="email" id="email">
+            </label>
+        </p>
+        <p>
+            취미 : 
+            <label>드라이브<input type="checkbox" name="hobby" value="드라이브"></label>
             <label>영화감상<input type="checkbox" name="hobby" value="영화감상"></label>
             <label>쇼핑<input type="checkbox" name="hobby" value="쇼핑"></label>
             <label>게임<input type="checkbox" name="hobby" value="게임"></label>
             <label>운동<input type="checkbox" name="hobby" value="운동"></label>
         </p>
-        <p>주민등록번호 : <input type="text" name="ssn1" id="ssn1" maxlength="6" onkeyup="moveFocus()"> - <input
-                type="password" name="ssn2" id="ssn2" maxlength="7"> <input type="button" value="주민등록번호 검증"
-                onclick="ssnCheck()"></p>
-        <p><label>우편번호 : <input type="text" name="zipcode" id="sample6_postcode" readonly></label> <input type="button"
-                value="우편번호 검색" onclick="sample6_execDaumPostcode()"></p>
-        <p><label>주소 : <input type="text" id="sample6_address" name="address1"></label></p>
-        <p><label>상세주소 : <input type="text" name="address2" id="sample6_detailAddress"></label></p>
-        <p><label>참고항목 : <input type="text" name="address3" id="sample6_extraAddress"></label></p>
-        <p><input type="submit" value="가입완료"> <input type="reset" value="다시작성"></p>
+        <p>
+            주민등록번호:
+            <input type="text"name="ssn1"id="ssn1"maxlength="6" onkeyup="moveFocus()"> - 
+            <input type="password" name="ssn2" id="ssn2" maxlength="7"> 
+            <input type="button" value="주민등록번호 검증" onclick="ssnCheck()">
+        </p>
+        <p>
+            <label>
+                우편번호 : 
+                <input type="text" name="zipcode" id="sample6_postcode" readonly>
+            </label> 
+                <input type="button" value="우편번호 검색" onclick="sample6_execDaumPostcode()">
+        </p>
+        <p>
+            <label>
+                주소:<input type="text" id="sample6_address" name="address1">
+            </label>
+        </p>
+        <p>
+            <label>
+                상세주소:<input type="text" name="address2" id="sample6_detailAddress">
+            </label>
+        </p>
+        <p>
+            <label>
+                참고항목:<input type="text" name="address3" id="sample6_extraAddress">
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="가입완료"> 
+            <input type="reset" value="다시작성">
+        </p>
     </form>
 </body>
-
 </html>

@@ -18,27 +18,31 @@
 cloneNode() : 기존의 존재하는 노드와 동일한 새로운 노드를 생성하고 반환
 cloneNode(true)
          ------
-         true : 복제되는 노드의 모든 속성과 자식노드도 같이 복제
-         false: 속성 노드만 복제하고 자식 노드를 복제하지 않음
+         true  : 복제되는 노드의 모든 속성과 자식노드도 같이 복제
+         false : 속성 노드만 복제하고 자식 노드를 복제하지 않음
 
+-
 
 폼 객체
-
     <form name="myform" id="regform">
         <input type="text" name="userid" id="id">
     </form>
 
-
 폼의 접근
-const frm = document.myform; (name)
-const frm = document.getElementById('regform'); (id)
+    · (name = "myform")일 때, name으로 접근하는 방법
+        const frm = document.myform;
+    · (id = "regform")일 때, id로 접근하는 방법
+        const frm = document.getElementById('regform'); 
 
 아이디 value 접근
-const id = document.myform.userid.value; (name)
-const id = frm.userid.value; (name)
-const id = frm.elements[0].value;
-const id = frm.elements['userid'].value;
-const id = document.getElementById('id').value;
+    "name 접근 방법"
+    const id = document.myform.userid.value;    (name)
+
+    "frm"은 위에처럼 객체를 따로 만들었을 때, 접근 방법이다.
+    const id = frm.userid.value;                (name)
+    const id = frm.elements[0].value;
+    const id = frm.elements['userid'].value;
+    const id = document.getElementById('id').value;
 
 정규표현식
 https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Regular_Expressions
@@ -62,7 +66,7 @@ test()
     - 발생한 이벤트의 종류
     - 이벤트명이라고도 함
     - 가장 많이 사용하는 키보드, 마우스, HTML DOM, window객체등을 처리하는 이벤트가 많이 제공
-        예 : onClick, onKeypress, onLoad ...
+      예 : onClick, onKeypress, onLoad ...
 
 이벤트 타겟(Event Target)
     - 이벤트가 일어날 객체
@@ -76,10 +80,10 @@ test()
                     -------- -------  --------
                    이벤트타겟 이벤트명 이벤트리스너
 
-        const btn = document.getElementById('testBtn');
-        btn.addEventListener('click', clickBtn);
-        ----                 -------  --------
-       이벤트타겟             이벤트명 이벤트리스너
+        const button = document.getElementById('testBtn');
+        button.addEventListener('click', clickBtn);
+        ----                     -------  --------
+        이벤트타겟                이벤트명 이벤트리스너
 
 
 이벤트 객체(Event Object)

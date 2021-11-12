@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +7,25 @@
     <title>폼 객체</title>
     <script>
         'use strict';
+        /* html, body 태그를 모두 읽고, 익명 함수를 실행하는 명령어 */
         window.onload = function () {
             const frm1 = document.frm1;
             const frm2 = document.frm2;
+
+        /* "frm"은 위에처럼 객체를 따로 만들었을 때, 접근 방법이다. */
             console.log(frm1.search.placeholder);
             console.log(frm2.userid.placeholder);
-            console.log(frm2.userid.value);
-            console.log(document.forms[1][0].value);
-            console.log(document.forms['frm2'].elements['userid'].value);
-            console.log(document.getElementById('id').value);
+            console.log(frm2.userid.value); 
+            // =apple
+            console.log(document.forms[1][0].value); 
+            // =apple 
+            console.log(document.forms['frm2'].elements['userid'].value); 
+            // =apple
+            console.log(document.getElementById('id').value); 
+            // =apple
         }
     </script>
 </head>
-
 <body>
     <h2>폼 객체</h2>
     <form name="frm1">
@@ -33,5 +38,4 @@
         <input type="submit" value="확인">
     </form>
 </body>
-
 </html>
