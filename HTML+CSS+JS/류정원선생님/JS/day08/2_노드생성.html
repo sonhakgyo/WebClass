@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +8,45 @@
     <script>
         'use strict';
         const createNode = function () {
-            const elNode = document.getElementById('el'); // <p id="el">새로운 문장이 이 문장 앞에 추가됨</p>
-            const newNode = document.createElement('p'); // <p></p>
-            newNode.innerHTML = "<b>🎃새로운 요소🎃</b>"; // <p><b>🎃새로운 요소🎃</b></p>
+            const elNode = document.getElementById('el'); 
+            // <p id="el">새로운 문장이 이 문장 앞에 추가됨</p>
+            const newNode = document.createElement('p'); 
+            // <p></p> : p태그를 생성한다.
+            newNode.innerHTML = "<b>🎃새로운 요소🎃</b>"; 
+            // <p><b>🎃새로운 요소🎃</b></p> : innerHTML 
             document.body.insertBefore(newNode, elNode);
+            // elNode 앞에 newNode를 삽입한다.
         }
+
         const createAttr = function () {
-            const attr = document.getElementById('attr'); // <p id="attr">이 단락에 새로운 속성이 추가</p>
-            const newAttr = document.createAttribute('style'); // style=""
-            newAttr.value = 'color: deepskyblue; background-color: gold;'; // style="color: deepskyblue; background-color: gold;"
+            const attr = document.getElementById('attr'); 
+            // <p id="attr">이 단락에 새로운 속성 추가</p>
+            const newAttr = document.createAttribute('style'); 
+            // style="" 속성을 만든다.
+            newAttr.value = 'color: deepskyblue; background-color: gold;'; 
+            // style="color: deepskyblue; background-color: gold;" 속성 삽입
             attr.setAttributeNode(newAttr);
             // <p id="attr" style="color: deepskyblue; background-color: gold;">이 단락에 새로운 속성이 추가</p> 
         }
+
         const createtext = function () {
-            const textNode = document.getElementById('text'); // <p id="text"></p>
-            const newText = document.createTextNode('🎁😍🎂🎍'); // 🎁😍🎂🎍
-            textNode.appendChild(newText); // <p id="text">🎁😍🎂🎍</p>
+            const textNode = document.getElementById('text'); 
+            // <p id="text"></p>
+            const newText = document.createTextNode('🎁😍🎂🎍'); 
+            // 🎁😍🎂🎍
+            textNode.appendChild(newText); 
+            // <p id="text">🎁😍🎂🎍</p>
         }
     </script>
 </head>
-
 <body>
     <h2>노드의 생성</h2>
-    <p id="el">새로운 문장이 이 문장 앞에 추가됨</p>
-    <p id="attr">이 단락에 새로운 속성이 추가</p>
+    <p id="el">새로운 문장이 앞에 추가된다.</p>
+    <p id="attr">이 단락에 새로운 속성을 추가한다.</p>
     <p id="text"></p>
 
     <button onclick="createNode()">요소노드생성</button>
     <button onclick="createAttr()">속성노드생성</button>
     <button onclick="createtext()">텍스트노드생성</button>
 </body>
-
 </html>

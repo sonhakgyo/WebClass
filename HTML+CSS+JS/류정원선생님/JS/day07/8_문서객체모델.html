@@ -7,10 +7,12 @@
     <title>문서객체모델 - 2</title>
     <script>
         'use strict';
+    /* HTML 태그보다 Script가 위에 있기 때문에 console.log(gnb);가 먹히지 않는다. */
+    /* 이 함수는 HTML을 모두 읽고 function을 실행하라는 명령의 함수 */
         window.onload = function () {
             const gnb = document.getElementById('gnb');
             console.log(gnb);
-            console.log(gnb.parentNode);
+            console.log(gnb.parentNode); 
             console.log(gnb.children[0]);
             console.log(gnb.children[0].nextElementSibling);
             console.log(gnb.children[0].children[1]);
@@ -24,7 +26,7 @@
     <h2>문서객체모델 - 2</h2>
     <div>
         <nav id="gnb">
-            <ul>
+            <ul> 
                 <li class="first">내용 1</li>
                 <li>내용 2</li>
                 <li>내용 3</li>

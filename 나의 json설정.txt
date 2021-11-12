@@ -184,7 +184,7 @@
                     "comment.block.html"
                 ],
                 "settings": {
-                    "foreground": "#edff4d",
+                    "foreground": "#ffed4d",
                     "fontStyle": "italic"
                 }
             },
@@ -202,7 +202,7 @@
                     "comment.block.js"
                 ],
                 "settings": {
-                    "foreground": "#edff4d",
+                    "foreground": "#ffed4d",
                     "fontStyle": "italic"
                 }
             },
@@ -211,7 +211,7 @@
                     "comment.line.double-slash.js"
                 ],
                 "settings": {
-                    "foreground": "#edff4d",
+                    "foreground": "#ffed4d",
                     "fontStyle": "italic"
                 }
             },
@@ -257,7 +257,7 @@
             {
                 "scope": ["storage.type.function.js"],
                 "settings": {
-                    "foreground": "#6461ff",
+                    "foreground": "#8482ff",
                 }
             },
             {

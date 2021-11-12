@@ -9,33 +9,47 @@
 <body>
     <h2>문서객체모델 - 1</h2>
     <ul>
-        <li name="model">html</li>
+        <li name="model"> html </li>
         <li>CSS</li>
-        <li class="js">JavaScript</li>
-        <li class="js">Ajax</li>
-        <li id="server">Apache</li>
-        <li name="model">php</li>
+        <li class="js">   JavaScript </li>
+        <li class="js">   Ajax </li>
+        <li id="server">  Apache </li>
+        <li name="model"> php </li>
     </ul>
     <script>
         'use strict';
+
+        /* 태그 이름 */
         const tagName = document.getElementsByTagName('li');
         for (let i = 0; i < tagName.length; i++) {
             console.log(tagName[i]);
         }
-        console.log('🎈🎈🎈🎈🎈🎈🎈');
+
+        console.log('🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈');
+
+        /* 클래스 이름 */
         const className = document.getElementsByClassName('js');
         for (let i in className) {
             console.log(className[i]);
         }
-        console.log('🎈🎈🎈🎈🎈🎈🎈');
+        
+        console.log('🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈');
+
+        /* ID 이름 */
         const id = document.getElementById('server');
         console.log(id);
-        console.log('🎈🎈🎈🎈🎈🎈🎈');
+
+        console.log('🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈');
+
+        /* name 이름 */
         const name = document.getElementsByName('model');
         for (let i of name) {
             console.log(i);
         }
-        console.log('🎈🎈🎈🎈🎈🎈🎈');
+        
+        console.log('🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈');
+
+        /* 쿼리 셀렉터 */
         const querySelector = document.querySelectorAll('li.js');
         for (let i in querySelector) {
             console.log(querySelector[i]);
