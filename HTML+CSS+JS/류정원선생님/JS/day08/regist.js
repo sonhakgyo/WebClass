@@ -90,7 +90,6 @@ const sendit = function () {
             count++;
         }
     }
-
     if (count == 0) {
         alert('취미는 적어도 1개 이상 선택하세요');
         return false;
@@ -122,7 +121,8 @@ const ssnCheck = function () {
         return false;
     }
 
-    // 001011 3068518
+    // 주민등록번호 001011 3068518
+    // 0 ~ 13자리
     const ssn = ssn1.value + ssn2.value;
     const s1 = Number(ssn.substr(0, 1)) * 2;
     const s2 = Number(ssn.substr(1, 1)) * 3;
@@ -146,7 +146,6 @@ const ssnCheck = function () {
     if (result == s13) {
         alert('유효한 주민등록번호입니다');
         isssn.value = 'y';
-
     } else {
         alert('유효하지 않은 주민등록번호입니다');
     }
