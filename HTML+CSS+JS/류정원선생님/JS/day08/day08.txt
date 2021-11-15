@@ -95,10 +95,11 @@ test()
 　    target 프로퍼티를 가짐
     - 이벤트 객체는 이벤트 리스너가 호출될 때 인수로 전달
 
-    <input type="button" onclick="sendit()" value="확인">
+    예제
+        <input type="button" onclick="sendit()" value="확인">
 
-    const sendit = function(e) {    // e : 이벤트 객체
-        console.log(e.target);  // 이벤트 타겟  객체
-        console.log(e.type);    // 이벤트 타입  click
-    }
+        const sendit = function(e) {    // e : 이벤트 객체
+            console.log(e.target);  // 이벤트 타겟  객체
+            console.log(e.type);    // 이벤트 타입  click
+        }
 
