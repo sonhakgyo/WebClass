@@ -14,14 +14,14 @@
 <body>
     <h2>문자열 함수</h2>
     <?php 
-        echo strlen($str1)."<br>";
-        echo strlen($str2)."<br>";
-        echo strlen($str3)."<br>";
+        echo strlen($str1)."<br>"; // 19
+        echo strlen($str2)."<br>"; // 42
 
         echo "<br>";
 
-        echo strcmp("abc", "ABC")."<br>";
-        echo strcmp("10", "2")."<br>";
+        echo strcmp("abc", "ABC")."<br>"; // 1=양수 출력, 문자열의 첫번째 아스키 코드값 비교 
+        echo strcmp("10", "2")."<br>";    // -1=음수 출력, 문자열의 첫번째를 비교
+        echo strcmp("ABC", "ABC")."<br>"; // 0 출력  
 /*      strcmp()
             - 전달 받은 두 개의 문자열을 서로 비교
             - 첫번째 매개변수가 두번째 매개변수보다 크면 양수, 작으면 음수를 반환
@@ -41,8 +41,9 @@
         foreach($arr as $str){
             echo $str." ";
         }
-
         echo("<br>");
+
+    /* str_replace => 변수 $str3에 저장된 문자열에서 o 문자를 전부 💎로 바꿔준다. */
         echo str_replace("o", "💎", $str3)."<br>";
     ?>
 </body>

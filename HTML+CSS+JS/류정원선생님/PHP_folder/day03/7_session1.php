@@ -3,7 +3,6 @@
     $_SESSION['userid'] = "apple";
     $_SESSION['name'] = "김사과";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

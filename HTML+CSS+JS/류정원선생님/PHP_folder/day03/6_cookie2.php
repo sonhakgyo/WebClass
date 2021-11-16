@@ -11,13 +11,13 @@
 </head>
 <body>
     <h2>쿠키 불러오기</h2>
-    <?php
-        if(!isset($_COOKIE['userid'])){
-            echo "<p>쿠키가 존재하지 않습니다.</p>";
-        } else{
-            echo "<p>쿠키가 존재합니다.</p>";
-            echo "<p>저장된 쿠키의 값: {$_COOKIE['userid']}</p>";
-        }
-    ?>
+<?php
+    if (!isset($_COOKIE['userid'])){
+        echo "<p>쿠키가 존재하지 않습니다.</p>";
+    } else {
+        echo "<p>쿠키가 존재합니다.</p>";
+        echo "<p>저장된 쿠키의 값: {$_COOKIE['userid']}</p>";
+    }
+?>
 </body>
 </html>

@@ -10,7 +10,7 @@
 </head>
 <body>
     <h2>함수</h2>
-    <?php
+<?php
     hello(); 
     hello();
 
@@ -19,6 +19,6 @@
 
     $result = getSum(10, 5);
     echo "result : {$result}";
-    ?>
+?>
 </body>
 </html>
