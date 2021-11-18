@@ -11,18 +11,19 @@
 </head>
 <body>
     <?php
-        if(!isset($_session['ID'])){
+        if (!isset($_session['id'])) {
     ?>
     <h2>로그인</h2>
-    <form method="get" action="4_get_ok.php">
+    <!-- id = admin, pw : 1234 -->
+    <form method="post" action="9_login_ok.php">
         <p>아이디: <input type="text" name="userid"></p>
         <p>비밀번호: <input type="search" name="userpw"></p>
         <p><input type="submit" value="검색"></p>
     </form>
     <?php
-        }else{
+        } else {
     ?>
-        <p><?$_SESSION['id']?>님 환영합니다.</p>
+        <p><?=$_SESSION['id']?>님 환영합니다.</p>
         <p><a href="./9_logout.php">로그아웃</a></p>
     <?php
         }
