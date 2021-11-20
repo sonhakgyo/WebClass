@@ -210,6 +210,33 @@
             },
             {
                 "scope": [
+                    "punctuation.definition.comment.begin.css"
+                ],
+                "settings": {
+                    "foreground": "#8a8a8a",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "punctuation.definition.comment.end.css"
+                ],
+                "settings": {
+                    "foreground": "#8a8a8a",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "comment.block.css"
+                ],
+                "settings": {
+                    "foreground": "#ffed4d",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
                     "comment.line.double-slash.js"
                 ],
                 "settings": {
@@ -379,4 +406,3 @@
     },
     "workbench.iconTheme": "material-icon-theme"
 }
-
