@@ -166,7 +166,7 @@
             {
                 "scope": ["keyword.control"],
                 "settings": {
-                    "foreground": "#f878eb",
+                    "foreground": "#78dff8",
                 }
             },
 
@@ -379,7 +379,4 @@
     },
     "workbench.iconTheme": "material-icon-theme"
 }
-
-
-
 
