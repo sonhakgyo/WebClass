@@ -10,9 +10,10 @@ public class Anonymous3 {
             @Override
             public void f1() {
                 System.out.println("Inter1 implements f1()");
-            }};
+            }
+        };  // 세미콜론
 
-            it.f1();
+        it.f1();
     }
 }
 
