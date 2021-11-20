@@ -1,4 +1,4 @@
-package Java_folder.abstractClass;
+package Java_folder.classFolder;
 
 public class ShapeMain {
     public static void main(String[] args) {
