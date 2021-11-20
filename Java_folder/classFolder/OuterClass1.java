@@ -1,11 +1,11 @@
 package Java_folder.classFolder;
 
 /* 외부 클래스 선언 */
-public class OuterClass {
+public class OuterClass1 {
     int outData = 20;
 
     /* 외부 클래스 생성자(new 연산 객체 생성 시 기본 호출) */
-    OuterClass() {
+    OuterClass1() {
         System.out.println("외부 클래스의 '생성자' 호출됨");
     }
 
@@ -35,10 +35,10 @@ public class OuterClass {
     /* 메인 메서드 */
     public static void main(String[] args) {
         /* 외부 클래스부터 객체화한다. */
-        OuterClass outer = new OuterClass();
+        OuterClass1 outer = new OuterClass1();
 
         /* 외부 클래스 안의 내부 클래스 필드를 사용하는 방법 */
-        OuterClass.InnerClass inner = outer.new InnerClass();
+        OuterClass1.InnerClass inner = outer.new InnerClass();
         /* showInner 메서드 안에 메서드는 3개다. */
         inner.showInner();
     }

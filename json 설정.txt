@@ -3,7 +3,7 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
     "liveServer.settings.donotVerifyTags": true,
-    "editor.fontSize": 19.5,
+    "editor.fontSize": 18,
     "editor.wordWrap": "on",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -19,6 +19,7 @@
 
     /* PHP 설정 코드 */ 
     "settingsSync.ignoredSettings": [
+
         "-php.validate.executablePath"
     ],
 
@@ -35,6 +36,13 @@
             },
             {
                 "scope": ["comment.block.java"],
+                "settings": {
+                    "foreground": "#edff4d",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": ["comment.line.double-slash.java"],
                 "settings": {
                     "foreground": "#edff4d",
                     "fontStyle": "italic"
@@ -161,12 +169,6 @@
                     "foreground": "#f878eb",
                 }
             },
-            {
-                "scope": [""],
-                "settings": {
-                    "foreground": "#",
-                }
-            },
 
             
             /* 여기서부터는 HTML+CSS+JS 태그 폰트 색상 설정 */
@@ -222,7 +224,7 @@
                     "fontStyle": "italic"
                 }
             },
-            {
+            { 
                 "scope": ["entity.other.attribute-name.html"],
                 "settings": {
                     "foreground": "#C584FA",
@@ -239,7 +241,7 @@
             {
                 "scope": ["string.quoted.double.html"],
                 "settings": {
-                    "foreground": "#2FCE44",
+                    "foreground": "#42d156",
                 }
             },
             {
@@ -337,6 +339,40 @@
                 "scope": ["variable.other.constant.js"],
                 "settings": {
                     "foreground": "#fb7c05",
+                }
+            },
+            /*                    PHP                    */ 
+            {
+                "scope": ["variable.other.php"],
+                "settings": {
+                    "foreground": "#f1f1f1",
+                }
+            },
+            {
+                "scope": ["punctuation.definition.variable.php"],
+                "settings": {
+                    "foreground": "#88d9f1",
+                }
+            },
+            {
+                "scope": ["comment.line.double-slash.php"],
+                "settings": {
+                    "foreground": "#edff4d",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": ["comment.block.php"],
+                "settings": {
+                    "foreground": "#edff4d",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": ["punctuation.definition.comment.php"],
+                "settings": {
+                    "foreground": "#8a8a8a",
+                    "fontStyle": "italic"
                 }
             }
         ]
