@@ -22,3 +22,16 @@
         1) Queue<Element> queue = new LinkedList<Element>(); - 주로 사용하는 방법이다.
         2) Queue<Element> queue = new Array<Element>();
 
+
+2. 스택 Stack
+    - 스택은 클래스이기 때문에 바로 사용 가능하다.
+    - 후입선출(LIFO)의 구조 : 나중에 들어온 데이터가 먼저 나간다.
+    - 한 쪽 끝에서 삽입과 삭제가 '모두' 일어나는 구조
+    - Vector의 자식 클래스
+    - top : 삽입, 삭제
+
+    [스택과 관련된 메서드]
+        E peek()             : top 요소를 반환
+        E pop()              : top 요소 제거 후 반환
+        E push(E item)       : top에 요소 추가
+        int search(Object O) : 요소 O가 있는지 검색해서 위치 반환
