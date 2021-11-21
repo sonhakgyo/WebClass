@@ -5,7 +5,7 @@ public class GenericCalculator implements GenericInterface<Double, Integer> {
         GenericCalculator cal = new GenericCalculator();
         System.out.printf("%.2f\n", cal.add(2.7, 4.1));
         System.out.printf("%.2f\n", cal.sub(2.7, 4)); /* 매개변수도 타입에 맞게 */
-        System.out.printf("%d\n", cal.mul(2, 4)); /* 매개변수도 타입에 맞게 */
+        System.out.printf("%d\n", cal.mul(2, 4));     /* 매개변수도 타입에 맞게 */
     }
 
     @Override
