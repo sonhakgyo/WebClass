@@ -4,8 +4,8 @@ public class Generic1 {
     public static void main(String[] args) {
         Value v = new Value();
         v.<Integer>typeSearch(3); 
-        //정확하기 전달하기 위해서는 원래 앞에 클래스 타입 <Integer>을 붙여야 한다.
-        //그러나 버젼이 바뀌면서 더 이상 <Integer>를 작성하지 않아도 된다.
+    //  정확하기 전달하기 위해서는 원래 앞에 클래스 타입 <Integer>을 붙여야 한다.
+    //  그러나 버젼이 바뀌면서 더 이상 <Integer>를 작성하지 않아도 된다.
         v.typeSearch(3.14);
         v.typeSearch(3.14f);
         v.typeSearch('가');
@@ -15,7 +15,7 @@ public class Generic1 {
 }
 
 class Value {
-    //Value 클래스 안에 <T> 타입 메서드
+//  Value 클래스 안에 <T> 타입 메서드
     public <T> void typeSearch(T x) {
         if(x instanceof Integer) {
             System.out.println(x + "는 정수입니다.");
