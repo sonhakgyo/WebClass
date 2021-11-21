@@ -1,0 +1,24 @@
+컬렉션 프레임워크
+                1. 큐 Queue
+                2. 스택 Stack
+
+1. 큐 Queue
+    - 한 쪽 끝에서는 삽입이, 다른 쪽에서는 삭제가 일어나는 구조
+    - 큐는 인터페이스이므로 사용하려면 '업캐스팅(Upcasting)'이 필요하다.
+    - 선입선출(FIFO)의 구조
+    - front : 머리, 삭제, 저장된 원소 중에서 첫 번째 원소
+    - rear  : 꼬리, 삽입, 저장된 원소 중에서 마지막 원소 
+
+    [큐와 관련된 메서드]
+        boolean add(E e)   : 큐에 요소 e 추가
+        E element()        : 큐에 제일 상단 요소 반환
+        E remove()         : 큐의 최상단 요소를 반환 후 제거
+
+        boolean offer(E e) : 큐에 요소 e를 추가
+        E peek()           : 큐에 제일 상단 요소 반환
+        E poll()           : 큐의 최상단 요소를 반환 후 제거 
+
+    [큐 사용법]
+        1) Queue<Element> queue = new LinkedList<Element>(); - 주로 사용하는 방법이다.
+        2) Queue<Element> queue = new Array<Element>();
+
