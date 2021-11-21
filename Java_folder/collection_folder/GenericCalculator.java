@@ -1,4 +1,4 @@
-package Java_folder.generic;
+package Java_folder.collection_folder;
 
 public class GenericCalculator implements GenericInterface<Double, Integer> {
     public static void main(String[] args) {

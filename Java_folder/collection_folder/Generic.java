@@ -1,4 +1,4 @@
-package Java_folder.generic;
+package Java_folder.collection_folder;
 
 /* 클래스 이름 뒤에 '제네릭'이 붙는다. */
 public class Generic<T> {

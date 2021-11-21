@@ -1,4 +1,4 @@
-package Java_folder.generic;
+package Java_folder.collection_folder;
 
 public class Single {
     /* 복습 */

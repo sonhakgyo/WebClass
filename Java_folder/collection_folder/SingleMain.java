@@ -1,6 +1,6 @@
 /* 패키지명에 .을 사용하면 폴더가 하나 더 만들어진다. */
 /* a.b.c.d ==> a폴더 안에 b폴더 안에 c폴더 안에 d */
-package Java_folder.generic;
+package Java_folder.collection_folder;
 
 public class SingleMain {
     public static void main(String[] args) {

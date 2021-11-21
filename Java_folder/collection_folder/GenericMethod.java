@@ -1,4 +1,4 @@
-package Java_folder.generic;
+package Java_folder.collection_folder;
 
 public class GenericMethod {
     /* static 메서드는 이미 메모리에 올라가 있기 때문에 객체화할 필요가 없다. */
