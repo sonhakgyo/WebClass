@@ -45,3 +45,106 @@
         S, U       : 여러개의 제네릭 기법을 사용할 때 많이 사용한다.
         K(Key)     : 키 타입 지정 시 사용한다.
         V(Value)   : 값 타입 지정 시 사용한다.
+
+
+-
+
+
+컬렉션 프레임워크2
+                1. 셋 Set
+                2. 리스트 List
+
+1. 셋 Set
+    - 요소들을 집합적으로 모아놓은 자료구조
+    - 인터페이스
+    - 중복을 허용하지 않는다.
+    - 저장 순서가 없다.
+
+    셋(Set)을 구현한 클래스 
+        - 해쉬셋 HashSet
+        - 트리셋 TreeSet
+
+        [1] 해쉬셋 HashSet
+            - Set과 동일하게 중복이 없고, 순서가 없다.
+            - 중복된 요소 add() 시에는 집합에 추가되지 않고 false값을 반환한다.
+
+            <생성자>
+                HashSet()             : HashSet 클래스의 기본 생성자
+                HshSet(Collection c)  : 컬렉션의 요소로 HashSet 객체 생성
+                HashSet(int capacity) : capacity 용량을 갖는 객체 생성
+
+        [2] 트리셋 TreeSet
+            - Set과 동일하게 중복은 없으나 정렬 기능이 추가된 형태이다.
+            - 데이터 추가 시 기준 데이터보다 작다면 기준의 왼쪽에 위치한다.
+            - 데이터 추가 시 기준 데이터보다 크다면 기존의 오른쪽에 위치한다.
+            - '이진 탐색 트리'의 구조와 같다.
+
+
+2. 리스트 List
+    - 데이터를 일렬로 늘어놓은 구조
+    - 인터페이스
+    - 중복을 허용한다.
+    - 순서가 있다.
+
+    <리스트 인터페이스의 주요 메서드>
+        add(int index, E elem) : index 위치에 elem 추가
+        get(int index)         : index 위치에 있는 요소 반환
+        indexOf(Object o)      : 요소 o가 있는 위치 반환
+        listiterator()         : Listiterator() 반환
+        remove(int index)      : index 위치 요소 삭제 후 삭제값 반환
+        set(int index, E elem) : index 위치 요소를 elem으로 변경
+
+    리스트(List) 인터페이스를 구현한 클래스
+        - 어레이리스트 ArrayList
+        - 링크드리스트 LinkedList
+
+        [1] 어레이리스트 ArrayList
+            - 요소 추가 시 0번 인덱스부터 차례대로 요소를 저장한다.
+            - 배열처럼 크기가 정해져 있지 않다. 추가할 수 있다.
+            - 배열에서 발전된 형태이다.
+
+        [2] 링크드리스트 LinkedList 
+            - 요소들이 서로 논리적으로 연결되어있는 리스트
+            - 각 요소가 다음 요소의 주소를 저장한다.
+
+
+-
+
+
+컬렉션 프레임워크3
+                1. 큐 Queue
+                2. 스택 Stack
+
+1. 큐 Queue
+    - 선입선출(FIFO)의 구조
+    - 한 쪽 끝(rear)에서는 삽입이, 다른 쪽(front)에서는 삭제가 일어나는 구조
+    - 큐는 인터페이스이므로 사용하려면 '업캐스팅(Upcasting)'이 필요하다.
+    - front : 머리, 삭제, 저장된 원소 중에서 첫 번째 원소
+    - rear  : 꼬리, 삽입, 저장된 원소 중에서 마지막 원소 
+
+    [큐와 관련된 메서드]
+        boolean add(E e)   : 큐에 요소 e 추가
+        E element()        : 큐에 제일 상단 요소 반환
+        E remove()         : 큐의 최상단 요소를 반환 후 제거
+
+        boolean offer(E e) : 큐에 요소 e를 추가
+        E peek()           : 큐에 제일 상단 요소 반환
+        E poll()           : 큐의 최상단 요소를 반환 후 제거 
+
+    [큐 사용법]
+        1) Queue<Element> queue = new LinkedList<Element>(); - 주로 사용하는 방법이다.
+        2) Queue<Element> queue = new Array<Element>();
+
+
+2. 스택 Stack
+    - 후입선출(LIFO)의 구조 : 나중에 들어온 데이터가 먼저 나간다.
+    - 한 쪽 끝(top)에서 삽입과 삭제가 '모두' 일어나는 구조
+    - 스택은 클래스이기 때문에 바로 필드 사용이 가능하다.
+    - Vector의 자식 클래스
+    - top : 삽입, 삭제
+
+    [스택과 관련된 메서드]
+        E peek()             : top 요소를 반환
+        E pop()              : top 요소 제거 후 반환
+        E push(E item)       : top에 요소 추가
+        int search(Object O) : 요소 O가 있는지 검색해서 위치 반환
