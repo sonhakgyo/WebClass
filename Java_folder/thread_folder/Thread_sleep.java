@@ -1,5 +1,10 @@
 package Java_folder.thread_folder;
-
+/*
+sleep()
+    스레드를 지정한 시간 동안 Block 상태로 만든다.
+    시간은 1000 분의 1 초까지 지정할 수 있으며 지정된 시간이 지나면 
+    다시 runnable(실행 가능한)상태로 돌아간다.
+*/
 public class Thread_sleep {
     public static void main(String[] args) {
         SleepThread t = new SleepThread();
