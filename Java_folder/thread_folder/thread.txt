@@ -28,3 +28,20 @@
             - 자바 스레드로 작동할 작업이 무엇인지 코드로 작성한다.
             - 스레드 코드가 실행할 수 있도록 JVM한테 요청한다.
 
+    1. 스레드 작업 코드 작성 방법
+        1) Thread 클래스 상속
+                                    class T1 extends Thread {
+                                        @run() 메서드 오버라이딩
+                                        public void run() {   
+                                            // 작업할 내용
+                                        }
+                                    }
+
+        2) Runnable 인터페이스 구현
+                                    class T2 implements Runnable {
+                                        @run() 메서드 오버라이딩, 무조건 오버라이딩 해야 한다.
+                                        public void run() {
+                                            // 작업할 내용
+                                        }
+                                    }
+
