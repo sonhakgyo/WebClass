@@ -1,4 +1,4 @@
-package Java_folder.collection;
+package Java_folder.collection_folder;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,7 +17,7 @@ import java.util.Collections;
 	ArrayList: 배열보다 느리지만 메모리양을 맘대로 늘리고 줄일 수 있다.
 　			   정확히는 기존의 배열이 5칸이라면 6칸 배열의 주소로 이동한다.
 */
-public class ArrList {
+public class ArrList1 {
 	public static void main(String[] args) {
 		/* 클래스 이름과 컬렉션 프레임워크명과 동일하지 않게 하고 */
 		/* ArrayList를 import 해야 한다. */

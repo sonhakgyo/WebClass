@@ -1,4 +1,4 @@
-package Java_folder.classFolder;
+package Java_folder.class_Folder;
 
 public class ObjectClass {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Java_folder.classFolder;
+package Java_folder.class_Folder;
 
 import java.awt.Button;
 import java.awt.Frame;

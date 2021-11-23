@@ -1,4 +1,4 @@
-package Java_folder.Set_Map;
+package Java_folder.collection_folder.Set_Map;
 
 import java.util.HashSet;
 import java.util.Iterator;
