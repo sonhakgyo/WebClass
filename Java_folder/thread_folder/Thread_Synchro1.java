@@ -1,8 +1,8 @@
 package Java_folder.thread_folder;
 
-// 스레드를 사용해 멀티태스킹을 구현했을 때 발생하는 문제 확인
+// 은행 계좌 인출 스레드를 사용해 멀티태스킹을 구현했을 때 발생하는 문제 확인
 
-public class Thread_Synchro {
+public class Thread_Synchro1 {
     public static void main(String[] args) {
         ATM atm = new ATM();
         Thread mom = new Thread(atm, "엄마");
