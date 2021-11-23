@@ -20,19 +20,19 @@ HashMap
         - 모든 값(데이터, 객체) 제거한다.
 
     containsKey()
-        - 키가 있는지 검사한다.
+        키가 있는지 검사한다.
     containsValue()
-        - 값이 있는지 검사한다.
+        값이 있는지 검사한다.
     
     get(Object Key) 
-        - Key값을 주고 그 짝인 Value값을 가져온다.
+        Key값을 주고 그 짝인 Value값을 가져온다.
 
     isEmpty
-        - 비어있는지 확인한다.
+        비어있는지 확인한다.
 
     keySet()
-        - HashMap에 저장된 모든 키가 저장된 형태(=Set 타입)    
+        HashMap에 저장된 모든 키가 저장된 형태(=Set 타입)    
     values()
-        - HashMap에 저장된 모든 값이 저장된 형태(=Collection 타입)
+        HashMap에 저장된 모든 값이 저장된 형태(=Collection 타입)
 
 
