@@ -20,11 +20,14 @@ class ATM implements Runnable {
             withdraw(1000);
             printInfo();
             try {
-                Thread.sleep(1000); // 1초
+                Thread.sleep(500); // 0.5초
             } catch(InterruptedException e) { }
         }
     }    
 
+//  다른 스레드가 접근 못하도록 동기화하는 synchronized 키워드 붙이기
+//  돈을 뽑는 작업을 동기화처리하여 멀티태스킹의 문제를 해결한다.
+//  synchronized void withdraw(int money) {
     void withdraw(int money) {
         Thread.yield();
         this.money -= money;
