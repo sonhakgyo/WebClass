@@ -19,11 +19,11 @@ public class Test01 {
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		String sql_table = "CREATE TABLE account"
 					+"("
-					+"name VARCHAR2(20),"
-					+"no NUMBER,"
-					+"email VARCHAR2(20),"
-					+"point NUMBER,"
-					+"regdate DATE"
+					+"name VARCHAR2(20),"  // 이름
+					+"no NUMBER,"          // 번호
+					+"email VARCHAR2(20)," // 이메일
+					+"point NUMBER,"       // 적립금
+					+"regdate DATE"        // 가입날짜
 					+")";
 		String sql_sequence = "CREATE SEQUENCE acc_seq NOCACHE";
 		
@@ -33,7 +33,7 @@ public class Test01 {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			con = DriverManager.getConnection(url, id, password);
-			
+
 		//  Account 테이블 생성
 			ps = con.prepareStatement(sql_table);
 			ps. execute();
@@ -47,12 +47,8 @@ public class Test01 {
 			e.printStackTrace();
 		} finally { // 예외상황이 발생했던 안 했던 간에 무조건 실행하는 구문
 			try {
-				if (ps != null) {
-					ps.close();  // null.close(); NullPointerException
-				}
-				if ( con != null) {
-					con.close();
-				}
+				if (ps != null) { ps.close(); }  // null.close(); NullPointerException}
+				if ( con != null) { con.close(); }
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
