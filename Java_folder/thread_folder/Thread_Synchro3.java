@@ -19,6 +19,7 @@ class Account {
     public int showMoney() {
         return money;
     }
+    
 //  입금 setMoeny() 메서드
     public synchronized void setMoney() {
         try {
@@ -30,6 +31,7 @@ class Account {
         System.out.println("어머니가 용돈을 입금했습니다. 현재 잔액 : " + this.showMoney());
         this.notify(); // 자고 있는 객체를 깨운다.
     }
+
 //  출금 getMoney() 메서드
     public synchronized void getMoney() {
         while(money <= 0) { // money가 0보다 작거나 같아진다면 작업내용 수행
