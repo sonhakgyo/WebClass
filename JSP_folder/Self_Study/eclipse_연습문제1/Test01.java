@@ -1,4 +1,4 @@
-package JSP_folder.Self_Study.연습문제1;
+package JSP_folder.Self_Study.eclipse_연습문제1;
 /*
 연습문제 
 	jdbc를 사용하여 회원들의 정보를 저장할 Account 테이블을 생성하는 클래스 만들기
@@ -17,11 +17,11 @@ public class Test01 {
 		String id = "user";
 		String password = "1234";
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String sql_table = "CREATE TABLE account"
+		String sql_table = "CREATE TABLE account" // 이클립스에서는 account2로 다시 만들었다.
 					+"("
 					+"name VARCHAR2(20),"  // 이름
 					+"no NUMBER,"          // 번호
-					+"email VARCHAR2(20)," // 이메일
+					+"email VARCHAR2(40)," // 이메일(20)은 너무 작아서 (40)으로 늘렸다.
 					+"point NUMBER,"       // 적립금
 					+"regdate DATE"        // 가입날짜
 					+")";
@@ -40,6 +40,7 @@ public class Test01 {
 			System.out.println("Account 테이블 생성완료");
 			
 		//  acc_seq 시퀀스 생성
+		//  Resource leak: 'ps' is not closed at this location : ps가 아직 종료되지 않았다.
 			ps = con.prepareStatement(sql_sequence);
 			ps.execute();
 			System.out.println("acc_seq 시퀀스 생성완료");
