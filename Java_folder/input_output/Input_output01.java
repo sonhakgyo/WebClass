@@ -8,7 +8,7 @@ import java.io.*;
 // import java.io.FileOutputStream;
 // import java.io.IOException;
 
-public class Input_output01 {
+public class Input_Output01 {
     public static void main(String[] args) throws IOException {
         FileInputStream fis = null;  // 입력 스트림
         FileOutputStream fos = null; // 출력 스트림
@@ -29,7 +29,8 @@ public class Input_output01 {
         }
         
     //  파일과의 연결을 닫는 명령
-    //  fis.close(); fos.close(); //이 명령은 java.io.IOException: Stream Closed 예외를 발생시킨다.
+    //  fis.close(); fos.close(); 
+    //  이 명령은 java.io.IOException: Stream Closed 예외를 발생시킨다.
         bos.close(); bis.close(); 
     }
 }
