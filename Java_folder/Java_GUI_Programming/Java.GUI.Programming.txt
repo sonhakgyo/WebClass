@@ -2,6 +2,7 @@
                     1. GUI
                     2. AWT와 Swing
                     3. Swing GUI Programming
+                    4. 이벤트(Event) 처리
 
 [GUI, Graphical User Interface]
         컴퓨터를 사용하는 사용자를 위해 만들어진 특정한 기능을 가진 그래픽 요소
@@ -10,6 +11,8 @@
                 사용자가 프로그램을 쉽게 다룰 수 있도록 그래픽을 제공하도록 프로그래밍하는 것
 
 [AWT와  Swing]
+        AWT와 Swing 차이점 : AWT는 운영체제의 자원을 활용한다.
+
         ★ AWT란?
                 자바에서 GUI를 프로그래밍하기 위해 처음으로 제공한 라이브러리
         특징 
@@ -54,3 +57,36 @@ Swing GUI Programming
                 BorderLayout : 컨테이너 공간을 동서남북 중앙으로 나누고 지정한 영역에 배치한다.
                 GridLayout   : 컨테이너 공간을 동일 크기의 2차원 격자로 나누고 들어오는 순서대로 왼->오 배치한다.
                 CardLayout   : 카드를 쌓아놓은 듯이 컴포넌트를 쪼개어 배치한다.
+
+이벤트(Event) 처리
+        이벤트 
+                프로그램을 실행하는 도중 사용자에 의해 발생하는 키보드 입력, 마우스 클릭 등의 동작
+
+        이벤트 처리
+                이벤트가 발생했을 때 어떤 작업을 할 것인지 결정하는 것
+
+        이벤트 객체
+                이벤트 발생 시 이벤트에 대한 정보를 가진 객체
+                        예) 이벤트의 종류, 이벤트가 발생한 위치(마우스 좌표 등), 체크박스의 체크 상태
+
+        이벤트 리스너
+                이벤트 객체에 의해서 호출되어 해당 이벤트를 처리하는 객체
+                        이벤트 리스너 사용 시 해당 인터페이스의 추상 메서드를 구현해야 한다.
+        이벤트에 따른 리스너의 종류
+                이벤트 종류
+                        Action, Key, Mouse
+                리스너 인터페이스
+                        ActionListener, KeyListener, MouserListener
+
+        Action  Action/  ActionListener/  void actionPerformed(ActionEvent) : Action 발생 시
+                
+        Key     Key/     KeyListener/     void KeyPressed(KeyEvent)         : 키가 눌려질 때
+                Key/     KeyListener/     void KeyReleased(KeyEvent)        : 눌려진 키를 뗄 때
+                Key/     KeyListener/     void keyTyped(KeyEvent)           : 유니코드 키 입력 시
+
+        Mouse   Mouse/   MouserListener/ void MouserPressed(MouseEvent)     : 마우스 버튼이 눌릴 때
+                Mouse/   MouserListener/ void MouseReleased(MouseEvent)     : 눌린 마우스 버튼을 뗄 때
+                Mouse/   MouserListener/ void MouserClicked(MouseEvent)     : 클릭 시
+                Mouse/   MouserListener/ void MouserEntered(MouseEvent)     : 마우스 포인터가 컴포넌트에 올라올 때
+                Mouse/   MouserListener/ void MouserExisted(MouseEvent)     : 마우스 포인터가 
+        
