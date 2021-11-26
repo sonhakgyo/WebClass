@@ -44,3 +44,13 @@
                         - title 설정   : setTitle("타이틀명");
                         - size 설정    : setSize(가로길이, 세로길이);
                         - visible 설정 : setVisible(true);
+
+Swing GUI Programming 
+        배치 관리자(Layout Manager)
+                컨테이너 내부에 컴포넌트 추가 시 각각의 위치와 크기에 관해 설정한다.
+
+        배치 관리자의 종류
+                FlowLayout   : 왼->오 순서대로 배치한다.
+                BorderLayout : 컨테이너 공간을 동서남북 중앙으로 나누고 지정한 영역에 배치한다.
+                GridLayout   : 컨테이너 공간을 동일 크기의 2차원 격자로 나누고 들어오는 순서대로 왼->오 배치한다.
+                CardLayout   : 카드를 쌓아놓은 듯이 컴포넌트를 쪼개어 배치한다.
