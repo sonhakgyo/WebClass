@@ -37,10 +37,13 @@ public class AddFrame3 extends JFrame {
 
 class Listener1 implements ActionListener { // import java.awt.event.ActionListener;
     @Override
-    public void actionPerformed(ActionEvent e) {
-        JButton button = (JButton)e.getSource(); // 이벤트 발생한 컴포넌트
+//  이벤트 발생 시 e 객체에 이벤트 정보가 전달된다.
+    public void actionPerformed(ActionEvent e) { 
+        JButton button = (JButton)e.getSource(); 
+    //  e.getSource() : 현재 이벤트가 발생된 컴포넌트
+    //  getSource()의 리턴타입이 Object이기 때문에 (JButton)으로 강제 형변환을 한다.
         button.setText("버튼 클릭"); 
-    //  버튼 문자열 재지정
+    //  butteo.setText("문자열"); : 현재 버튼의 문자열 재지정
     //  클릭하면 버튼 안의 "button"이 "버튼 클릭"으로 텍스트 변경된다.
     } 
 }

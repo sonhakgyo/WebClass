@@ -28,25 +28,25 @@
                 - 운영체제에 부담을 덜 주기 때문에 Swing을 더 추구한다.
                 - 디자인도 AWT보다 더 고급스럽다.
         
-        컴포넌트와 컨테이너
-                컴포넌트 : 자바에서 GUI를 구성하는 요소
-                컨테이너 : 다른 컴포넌트를 포함할 수 있는 컴포넌트
+컴포넌트와 컨테이너
+        컴포넌트 : 자바에서 GUI를 구성하는 요소
+        컨테이너 : 다른 컴포넌트를 포함할 수 있는 컴포넌트
 
-        실제 GUI 프로그래밍을 하기 위해서 사용하는 메서드
-                setLocation(int x, int y)      : 프레임의 위치를 지정한다.
-                setSize(int width, int height) : 프레임의 크기를 지정한다.
-                setIconImage(Image IconImage)  : 프레임의 타이틀바에 보여질 아이콘을 설정한다.
-                setTitle(String title)         : 타이블바의 제목을 설정한다.
-                setVisible(boolean b)          : 화면에 표시여부를 설정한다.
+실제 GUI 프로그래밍을 하기 위해서 사용하는 메서드
+        setLocation(int x, int y)      : 프레임의 위치를 지정한다.
+        setSize(int width, int height) : 프레임의 크기를 지정한다.
+        setIconImage(Image IconImage)  : 프레임의 타이틀바에 보여질 아이콘을 설정한다.
+        setTitle(String title)         : 타이블바의 제목을 설정한다.
+        setVisible(boolean b)          : 화면에 표시여부를 설정한다.
 
-        GUI 프로그래밍 순서 
-                1. extends JFrame 
-                        - JFrame 클래스를 상속받아 나만의 프레임 클래스를 작성한다.
-                        - 생성자에서 컴포넌트 및 프레임의 디자인을 구현한다. 
-                2. 기본 설정
-                        - title 설정   : setTitle("타이틀명");
-                        - size 설정    : setSize(가로길이, 세로길이);
-                        - visible 설정 : setVisible(true);
+GUI 프로그래밍 순서 
+        extends JFrame 
+                - JFrame 클래스를 상속받아 나만의 프레임 클래스를 작성한다.
+                - 생성자에서 컴포넌트 및 프레임의 디자인을 구현한다. 
+        기본 설정
+                - title 설정   : setTitle("타이틀명");
+                - size 설정    : setSize(가로길이, 세로길이);
+                - visible 설정 : setVisible(true);
 
 Swing GUI Programming 
         배치 관리자(Layout Manager)
@@ -80,13 +80,36 @@ Swing GUI Programming
 
         Action  Action/  ActionListener/  void actionPerformed(ActionEvent) : Action 발생 시
                 
-        Key     Key/     KeyListener/     void KeyPressed(KeyEvent)         : 키가 눌려질 때
-                Key/     KeyListener/     void KeyReleased(KeyEvent)        : 눌려진 키를 뗄 때
-                Key/     KeyListener/     void keyTyped(KeyEvent)           : 유니코드 키 입력 시
+        Key     Key/     KeyListener/     void KeyPressed(KeyEvent)       : 키가 눌려질 때
+                Key/     KeyListener/     void KeyReleased(KeyEvent)      : 눌려진 키를 뗄 때
+                Key/     KeyListener/     void keyTyped(KeyEvent)         : 유니코드 키 입력 시
 
-        Mouse   Mouse/   MouserListener/ void MouserPressed(MouseEvent)     : 마우스 버튼이 눌릴 때
-                Mouse/   MouserListener/ void MouseReleased(MouseEvent)     : 눌린 마우스 버튼을 뗄 때
-                Mouse/   MouserListener/ void MouserClicked(MouseEvent)     : 클릭 시
-                Mouse/   MouserListener/ void MouserEntered(MouseEvent)     : 마우스 포인터가 컴포넌트에 올라올 때
-                Mouse/   MouserListener/ void MouserExisted(MouseEvent)     : 마우스 포인터가 
+        Mouse   Mouse/   MouseListener/   void MouserPressed(MouseEvent)  : 마우스 버튼이 눌릴 때
+                Mouse/   MouseListener/   void MouseReleased(MouseEvent)  : 눌린 마우스 버튼을 뗄 때
+                Mouse/   MouseListener/   void MouserClicked(MouseEvent)  : 클릭 시
+                Mouse/   MouseListener/   void MouserEntered(MouseEvent)  : 마우스 포인터가 컴포넌트 위에 올라올 때
+                Mouse/   MouseListener/   void MouserExisted(MouseEvent)  : 마우스 포인터가 컴포넌트를 벗어날 때
+                
+                Mouse/   MouseMotionListener/  void mouseDragged(MouseEvent e) : 마우스가 드래그될 때
+                Mouse/   MouseMotionListener/  void mouseMoved(MouseEvent e)   : 마우스가 움직일 때
+
+        마우스 이벤트 발생 시 얻을 수 있는 정보
+                [메서드]              [메서드의 활용]
+                int getX()          : 현재 마우스 포인터의 X 좌표
+                itn getY()          : 현재 마우스 포인터의 Y 좌표
+                short getButton()   : 현재 클릭한 버튼(왼쪽, 오른쪽)
+                int hetClickCount() : 마우스를 클릭한 횟수
         
+        
+< Menu 만들기 순서 >
+        1) JMenuBar 객체 생성
+                JMenuBar jmenubar = new JMenuBar();
+        2) JMenu 생성
+                JMenu screenmenu = new JMenu("메뉴바1");
+        3) JMenuItem 생성
+        4) JMenu에 JMenuItem 추가
+                screenMenu.add(new JMenuItem("Load"));
+        5) JMenuBar에 JMenu 추가
+                jmenubar.add(screenMenu);
+        6) 현재 프레임의 메뉴바를, 생성한 JMenuBar 객체로 지정
+                setJMenuBar(jmenubar);
