@@ -36,8 +36,3 @@ JDBC란?
 
 
 
--
-
-ResultSet
-        - java.sql.ResultSet
-        - SELECT 등의 조회 쿼리문을 실행한 후 돌아오는 조회 값을 포함하는 클래스
