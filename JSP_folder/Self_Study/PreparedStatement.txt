@@ -1,0 +1,21 @@
+PreparedStatement
+        - java.sql.PreparedStatement
+        - 자바에서 SQL 쿼리를 실행할 때 사용하는 클래스
+        - 커넥션을 통해 연동된 상태에서 자바 코드를 데이터베이스와 연결해준다.
+
+PreparedStatement의 setString(), setInt(), setDouble()
+        - 쿼리문이 유동적인 경우 '?'로 대체할 수 있다.
+        - '?'에 대체할 데이터가 문자열이라면 setString()을, 정수라면 setInt(), 실수는 setDouble()을 사용한다.
+     예)
+        ps = con.preparedStatement("SELECT * FROM student WHERE st_name=? AND st_NO=?");
+        ps.setString(1, "김종혁"); // 1번 물음표 자리에 "김종혁"을 String 형태로 삽입한다. 외따옴표가 추가된다.
+        ps.setInt(2, 3); // 2번 물음표 자리에 3을 Int 형태로 삽입한다.
+
+
+
+
+
+
+
+
+

@@ -14,7 +14,7 @@ public class AddFrame3 extends JFrame {
         setTitle("JFrame");
         setSize(300, 300);
 
-        // 컴포넌트 객체 생성
+        // 컴포넌트 객체 생성 
         JButton button = new JButton("Button");
         JCheckBox box = new JCheckBox("Check Box");
         JSlider slide = new JSlider();

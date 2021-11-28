@@ -10,7 +10,7 @@ import java.io.*;
 
 public class Input_Output01 {
     public static void main(String[] args) throws IOException {
-        FileInputStream fis = null;  // 입력 스트림
+        FileInputStream fis = null;  // 입력 스트림ㄴ
         FileOutputStream fos = null; // 출력 스트림
         fis = new FileInputStream("java_IOpackage.txt");  // 존재하는 파일과 연결
         fos = new FileOutputStream("result.txt");         // 존재하지 않다면 파일 생성, 존재한다면 덮어쓰기
@@ -22,6 +22,7 @@ public class Input_Output01 {
         BufferedOutputStream bos = new BufferedOutputStream(fos);
 
         int data;
+
     //  data에 읽어온 바이트를 저장하는데 값이 -1이 아닐 때까지 반복한다.
     //  -1은 EOF(End Of File):파일의 끝을 의미하는데 파일 마지막까지 가져오는 것을 의미한다.
         while((data = fis.read()) != -1) { // fis든 bis든 상관없다.
