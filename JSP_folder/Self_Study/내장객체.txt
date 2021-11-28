@@ -1,1 +1,12 @@
-내장객체, 쿠키 
+내장객체(Implicit Objects) 
+        jsp 페이지에 내장되어있는 9개의 객체
+        
+    1. request 객체     : HTTP request에 해당하는 객체(HTTP 헤더, HTTP 바디)
+    2. response 객체    : HTTP response에 해당하는 객체(HTTP, 헤더, HTTP바디)
+    3. out 객체         : JSP가 생성한 결과를 브라우저에게 보낼 때 사용하는 출력스트림
+    4. pageContext 객체 : 현재 JSP 페이지에 대한 컨텍스트 객체
+    5. session 객체     : 브라우저 1개와 연결된 세션에 대한 객체
+    6. application 객체 : 서버의 설정 정보 및 자원에 대한 객체
+    7. config 객체      : JSP -> 서블릿으로 변환될 때 참조해야 할 정보를 담는 객체
+    8. page 객체        : 현재 JSP 페이지 자체를 의미하는 객체(page = this;)
+    9. exception 객체   : 예외가 발생하였을 경우 발생된 예외객체를 담는 객체, 예외페이지로 전달된다.

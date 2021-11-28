@@ -1,4 +1,4 @@
-package JSP_folder.Self_Study.eclipse_연습문제1;
+package eclipse_q;
 /*
 연습문제 
 	jdbc를 사용하여 회원들의 정보를 저장할 Account 테이블을 생성하는 클래스 만들기

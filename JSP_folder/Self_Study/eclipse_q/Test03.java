@@ -1,4 +1,4 @@
-package JSP_folder.Self_Study.eclipse_연습문제1;
+package eclipse_q;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
