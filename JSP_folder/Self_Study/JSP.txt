@@ -241,3 +241,26 @@ WAS의 종류 : tomcat, jeus, Web Logic, Webspere, JBOSS, Oracle 등
                 value : 파라미터값(자료형 : String[])
         - request.getParameterNames() : 전달된 모든 파라미터들의 이름을 얻는다. 
           리턴자료형 Enumeration
+
+
+실습 
+        파라미터 이름을 가져온다.
+        <%@ page import="java.util.Enumeration" %>
+        <%
+                Enumeration<String> names = request.getParameterNames();
+        %>
+        원소를 하나씩 가져온다.
+                <% while(names.hasMoreElements()) { %>
+
+                        <%= names.nextElement() %>
+
+                <% } %>
+        
+        모든 파라미터를 받는 메서드
+                <%
+                        Map<String, String[]> map = request.getParameterMap();
+                %>
+        <Key, Value>
+        Key   : 파라미터명
+        Value : 파라미터값
+
