@@ -17,7 +17,7 @@ public class ResultSet1 {
 
     //  커넥션 준비
         try {
-            Class.forName("orcale.jdbc.driver.OracleDriver");
+            Class.forName("oracle.jdbc.driver.OracleDriver");
             con = DriverManager.getConnection(url, id, password);
 
             String sql_Select = "SELECT st_name, st_avg FROM student";
@@ -43,8 +43,8 @@ public class ResultSet1 {
             e.printStackTrace();
         } finally {
             try {
-                if(ps != null) {ps.close();}
-                if(con != null) {con.close();}
+                if(ps != null) ps.close();
+                if(con != null) con.close();
             } catch(Exception e) {
                 e.printStackTrace();
             }
