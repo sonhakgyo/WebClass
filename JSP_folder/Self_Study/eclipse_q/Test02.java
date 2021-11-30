@@ -1,4 +1,4 @@
-package eclipse_q;
+package Self_Study.eclipse_q;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

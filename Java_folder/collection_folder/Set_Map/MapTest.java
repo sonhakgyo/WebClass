@@ -35,7 +35,6 @@ public class MapTest {
         /* 다양한 방법으로 Values처럼 출력하기 */
         price.forEach(data -> arPrice.add(data));
         System.out.println(arPrice);
-
         
         Set<Entry<String, Integer>> set = fruitMap.entrySet(); 
         Iterator<Entry<String, Integer>> iter = set.iterator();

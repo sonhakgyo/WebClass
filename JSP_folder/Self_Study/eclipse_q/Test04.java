@@ -1,4 +1,4 @@
-package eclipse_q;
+package Self_Study.eclipse_q;
 /*
 연습문제 1~4번 
 	1. 평균 점수가 80점 이상인 학생들의 이름, 국어, 번호, 평균점수 조회
