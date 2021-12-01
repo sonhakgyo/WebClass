@@ -16,4 +16,8 @@ header.jsp에서 작성한 <link rel="stylesheet" type="text/css" href="/layout.
 정답 경로는 이것이었다.
 	<link rel = "stylesheet" type = "text/css" href = "${pageContext.request.contextPath}/layout/layout.css"> 
 
+-
+
 pageContext.request.contextPath에 대해 좀 더 알아보겠다.
+		pageContext 객체 : 현재 JSP 페이지에 대한 컨텍스트 객체
+		request 객체     : HTTP request에 해당하는 객체(HTTP 헤더, HTTP 바디), 요청 정보를 담고있는 객체

@@ -1,12 +1,94 @@
 내장객체(Implicit Objects) 
-        jsp 페이지에 내장되어있는 9개의 객체
+    jsp 페이지에 내장되어있는 9개의 객체
         
-    1. request 객체     : HTTP request에 해당하는 객체(HTTP 헤더, HTTP 바디)
+    1. request 객체     : HTTP request에 해당하는 객체(HTTP 헤더, HTTP 바디), 요청 정보를 담고있는 객체
+                          클라이언트가 요청한 정보를 저장한다.
     2. response 객체    : HTTP response에 해당하는 객체(HTTP, 헤더, HTTP바디)
+                          서버의 응답 정보를 저장한다.
     3. out 객체         : JSP가 생성한 결과를 브라우저에게 보낼 때 사용하는 출력스트림
+                          페이지 콘텐츠 출력용 스트림
+                          JSP 페이지에서 생성되는 내용을 모두 전달받는 객체이다.
+                          out 객체의 메서드 중 출력에 관련된 메서드는 print()가 있다.
     4. pageContext 객체 : 현재 JSP 페이지에 대한 컨텍스트 객체
+                          페이지 정보를 저장한다.
     5. session 객체     : 브라우저 1개와 연결된 세션에 대한 객체
+                          HTTP 세션 정보를 저장한다.
+                          웹 브라우저 요청에 대한 세션 정보를 저장하고 관리하는 기능을 제공하는 객체다.
+                          웹 브라우저당 한 개의 세션이 할당된다.
     6. application 객체 : 서버의 설정 정보 및 자원에 대한 객체
+                          웹 어플리케이션 정보를 저장한다.
     7. config 객체      : JSP -> 서블릿으로 변환될 때 참조해야 할 정보를 담는 객체
+                          페이지 설정 정보를 저장한다.
     8. page 객체        : 현재 JSP 페이지 자체를 의미하는 객체(page = this;)
+                          페이지를 구현한 자바 클래스 인스턴스
     9. exception 객체   : 예외가 발생하였을 경우 발생된 예외객체를 담는 객체, 예외페이지로 전달된다.
+                          JSP 페이지에 관련된 일을 처리하는 과정에서 발생한 예외를 처리하기 위한 객체다.
+                          단, page 지시자의 isErrorPage 속성 값을 true로 설정해야 사용이 가능하다.
+
+
+Request 객체 메서드
+    ★  String getParameter(String name)             : 이름이 name인 파라미터 값을 리턴한다.
+        String[] getParameterValues(String name)     : 이름이 name인 파라미터 값을 배열로 리턴한다.
+        getParameterNames()                          : 웹 브라우저가 전송한 파라미터 값들을 리턴한다.
+        getParameterMap()                            : 웹 브라우저가 전송한 파라미터 맵을 리턴한다.
+        Enumeration<String> getParameterNames()      : 
+        void setCharacterEncoding("UTF-8")           : 
+    ★  void setAttribute(String name, Object value) : name-value 속성 추가
+    ★  Object getAttribute(String name)             : name에 해당하는 속성 값
+    ★  void removeAttribute(String name)            : name 속성 삭제
+
+
+Response 객체 메서드
+    ★  void sendRedirect(String url) : 지정 URL로 페이지 이동한다.
+    
+
+out 내장객체 주요 메서드    
+    ★  void println() 혹은 write() : 출력 버퍼에 데이터를 쓴다.
+        boolean isAutoFlush()       : 출력 버퍼가 가득찼을 때 자동 flush 여부
+        void flush()                : 출력 버퍼에 있는 모든 내용을 브라우저에 밀어보내고 버퍼를 비운다.
+        void close()                : flush 후에 out 객체를 종료한다.
+        void clearBuffer()          : 출력 버퍼에 있는 데이터를 지운다.
+        int getBufferSize()         : 출력 버퍼의 크기(byte)
+        int getRemaining()          : 출력 버퍼의 남은 버퍼의 크기(byte)
+
+
+pageContext 내장객체 주요 메서드
+    ★  void forward(String url)                     : 해당 url로 포워드(페이지 이동)
+    ★  void setAttribute(String name, Object value) : name-value 속성 추가
+    ★  Object getAttribute(String name)             : name에 해당하는 속성 값
+    ★  void removeAttribute(String name)            : name 속성 제거
+
+
+session 내장객체 주요 메서드
+    ★  Object getAttribute(String name)             : name 속성을 얻어온다.
+    ★  void setAttribute(String name, Object value) : name-value 속성 추가
+    ★  void removeAttribute(String name)            : name 속성 제거
+
+
+application 내장객체 주요 메서드
+    ★  void setAttribute(String name, Object value) : name-value 속성 추가
+    ★  Object getAttribute(String name)             : name에 해당하는 속성 값
+    ★  void removeAttribute(String name)            : name 속성 제거
+        String getServerInfo()                       : 웹 컨테이너의 이름과 버젼을 리턴한다.
+        String getRealPath(String path)              : 지정한 경로를 웹 어플리케이션 시스템 상의 경로로 변경하여 리턴한다.
+        void log(String message)                     : 로그 파일에 message를 기록한다.
+
+
+파라미터 vs 애트리튜브
+
+    파라미터(인자) 
+        - 브라우저에게 전송받은 데이터 <form> 주소창의 ? 이후 부분
+        - 이름: 문자열(String)
+          값  : 문자열만 가능(String)
+
+    애트리뷰트(속성)
+        - 우선순위는 애트리뷰트가 더 높다.
+        - 서버 내부에서 페이지끼리 주고 받을 수 있는 데이터
+        - 이름: 문자열(String)
+          값  : 모든 자료형 가능(Object)
+
+
+
+
+
+
