@@ -47,3 +47,30 @@ index --> C --> main
 3. 코드 작성 시작
                 1) main.jsp
                 2) M: VO DAO
+
+
+ㅡ
+
+개발 프로세스 
+            1. 개발 요구사항 확인
+            2. 클래스 추가/변경 설계
+            3. 코딩, 테스트, 로컬 QA
+            4. 커밋, 풀 리퀘스트
+            5. 코드 리뷰 
+            6. 통합 QA, 정적 분석
+            7. 개발, 스테이지 테스트
+            8. 운영 서버 배포
+            9. 필요 시 롤백
+
+자바 코딩 컨벤션 
+            · 접근자 순서 
+                public protected private abstract default static final transient volatile synchronized native strictfp
+            · long 타입은 숫자 마지막에 대문자 L 표시
+            · 패키지명은 모두 소문자, 밑줄(_)은 사용 안 함
+            · 클래스명은 파스칼 표기법
+            · 클래스명은 명사 또는 명사구
+            · 인터페이스명은 명사 또는 명사구지만 가끔 형용사 사용(예: Readable)
+            · 메서드명은 낙타 표기법(예: lowerCamelCase)
+            · 상수명은 대문자 뱀 표기법(예: UPPER_SNAKE_CASE)
+            · 비상수 필드명, 파라미터명, 로컬 변수명은 모두 카멜 표기법, lowerCamelCase
+            · 파라미터명은 2바이트 이상 유의미하게 선언
