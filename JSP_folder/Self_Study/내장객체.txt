@@ -88,7 +88,3 @@ application 내장객체 주요 메서드
           값  : 모든 자료형 가능(Object)
 
 
-
-
-
-

@@ -1,0 +1,18 @@
+JSP 액션 태그(JSP Action Tags): jsp 구성요소 중 하나
+
+    · JSP 액션 태그는 여는 태그와 닫는 태그로 구성되어 있다.
+            예1) <jsp:include page="Test01.jsp"/>
+            예2) <jsp:include page="Test01.jsp></jsp:include> 
+            예3) <jsp:include page="Test01.jsp>
+                        <jsp:param name="user_name" value="김종혁"/> // param 끝에 /을 넣어준다.
+                 </jsp:include>
+
+    1) <jsp:include> : 외부 JSP 파일을 포함한다.
+    2) <jsp:forward> : 다른 페이지로 포워드한다.
+    3) <jsp:plug-in> : Java Applet을 실행한다. // 애플릿이라는 개념을 이제는 잘 쓰지 않는다.
+    4) <jsp:useBean> : Java Bean을 사용한다    // DTO 데이터 세트
+    5) <jsp:setProperty> : 해당 빈에 프로퍼티를 저장한다.
+    6) <jsp:getProperty> : 해당 빈의 프로퍼티를 호출한다.
+
+
+
