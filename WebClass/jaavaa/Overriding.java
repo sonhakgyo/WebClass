@@ -1,4 +1,4 @@
-package WebClass.JAVA;
+package WebClass.jaavaa;
 
 public class Overriding {
   public static void main(String[] args) {

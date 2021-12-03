@@ -1,4 +1,4 @@
-package Self_Study;
+package JSP_folder.self_Study;
 
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
