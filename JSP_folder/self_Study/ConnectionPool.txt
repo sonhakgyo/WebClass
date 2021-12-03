@@ -39,3 +39,23 @@
                 - 사용 : 서버의 Connection들을 얻어오려면 javax.sql.DataSource를 이용한다.
 
 
+커넥션풀에서 알아야 할 속성
+        1. maxActive : 활동 중인 최대 커넥션의 최대 개수(음수: 제한없음, 기본값: 8)
+        2. maxIdle   : 풀에서 대기하는 커넥션의 최대 개수(음수: 제한없음, 기본값: 8)
+        3. minIdle   : 최소한으로 유지할 커넥션의 개수(기본값: 0)
+        4. maxWaitMillis : 커넥션이 고갈되었을 경우 기다리는 시간(밀리초) (음수: 무한히 대기)
+                           (whenExhaustedAction의 속성값이 1이어야 적용된다.)
+        5. whenExhaustedAction : 빌려줄 커넥션이 고갈되었을 경우 할 행동
+            0: 익셉션 발생
+            1: maxWait 속성에서 지정한 시간만큼 커넥션을 구할 때까지 기다린다.
+            2. 일시적을 커넥션을 생성한다.
+        6. testOnBorrow : true로 설정할 경우 커넥션을 빌릴 때 커넥션이 유효한 지 먼저 검사한다.
+        7. testOnReturn : true로 설정할 경우 커넥션을 반환할 때 커넥션이 유효한 지 먼저 검사한다.
+        8. timeBetweenEvictionRunsMillis : 사용되지 않는 커넥션을 추출하는 쓰레드의 주기 설정(밀리초)
+                                          (0 이하인 경우 실행되지 않는다.)
+        9. numTestsPerEvictionRun : 사용되지 않는 커넥션을 몇 개 검사할 지 지정한다.
+        10. minEvictableIdleTimeMillis : 사용되지 않는 커넥션을 추출할 때 지정된 시간(밀리초) 이상 비활성화 중인
+                                         커넥션만 추출한다(0 이하인 경우 제거하지 않는다).
+            예) minEvictableIdleTimeMillis = 300000 --> 300초(5분) 동안 비활성화 중이면 커넥션을 추출한다.
+        11. testWhileIdle : true일 경우 비활성화 커넥션을 추출할 때 커넥션이 유효한 지 먼저 검사한다.
+                            유효하지 않는 커넥션은 제거한다.
