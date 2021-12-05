@@ -1,0 +1,24 @@
+MVC 설계방식 Model View Controller
+        어플리케이션을 구성하는 패턴 중 하나(비즈니스 로직)
+
+Model      : 데이터에 관한 처리(Java beans), 데이터베이스, DAO DTO
+View       : 사용자에게 노출되는 화면
+Controller : 데이터(Model)와 화면 요소(View)를 연결, 관리한다.
+
+MVC1 : Controller를 제외한 설계방식
+        장점 : 구현이 쉽다.
+        단점 : 유지보수가 어렵다. 즉, 오래 가기 힘들다.
+        결론 : 작은 어플리케이션 개발에 용이하다.
+        과정 
+            loginView(ID, PW) ㅡ loginLogic ㅡ DAO ㅡ select ㅡ loginResultView
+
+
+
+MVC2 : 모든 요소가 Controller를 통해 제어되는 방식
+        장점 : 유지보수가 쉽다.
+        단점 : 구현이 어렵다
+        결론 : 대규모 어플리케이션 개발에 용이하다.
+        과정
+            클라이언트 --> 컨트롤러 --> 모델 --> 데이터베이스(데이터)
+                    ↖    ↓
+                        ↖ 뷰2
