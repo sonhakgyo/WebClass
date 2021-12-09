@@ -1,4 +1,4 @@
-package JSP_folder.self_Study;
+package JSP_folder.lsr;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

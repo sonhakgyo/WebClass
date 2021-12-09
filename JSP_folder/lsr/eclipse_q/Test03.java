@@ -1,4 +1,4 @@
-package JSP_folder.self_Study.eclipse_q;
+package JSP_folder.lsr.eclipse_q;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
