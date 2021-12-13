@@ -42,6 +42,16 @@ Ajax(Asynchronous Javascript and XML)
                     · 전달방식 : GET, POST 등 요청 방식 작성
                     · URL : 요청을 처리할 서버의 파일 주소 전달
                     · 동기 여부 : 요청을 동기식으로 전달할 지 비동기식으로 전달할 지를 선택한다.
+
+            - 실습
+                    <script>
+                        function sendRequest() {
+                            var xhr = XMLHttpRequest();
+
+                            xhr.open("POST", "request_ajax.jsp", true);
+                            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                            xhr.send("city=Seoul&zipcode=54645");
+                        }
             
         send()
             - 작성된 AJAX 요청을 서버로 전달한다.

@@ -1,14 +1,14 @@
 회원가입 구현
     1. member TABLE 생성
         CREATE TABLE member(
-            no       NUMBER PRIMARY KEY,
-            nickname VARCHAR2(20) NOT NULL UNIQUE,
-            gender   VARCHAR2(6)  NOT NULL,
-            tel      VARCHAR2(20) NOT NULL,
-            address  VARCHAR2(40) NOT NULL,
-            email    VARCHAR2(40) NOT NULL UNIQUE,
-            id       VARCHAR2(20) NOT NULL UNIQUE,
-            regdate  DATE
+            mem_no     NUMBER PRIMARY KEY,
+            mem_name   VARCHAR2(20) NOT NULL,
+            mem_gender VARCHAR2(6)  NOT NULL,
+            mem_birth  VARCHAR2(10) NOT NULL,
+            mem_addr   VARCHAR2(40) NOT NULL,
+            mem_tel    VARCHAR2(13) NOT NULL UNIQUE,
+            mem_email  VARCHAR2(50) NOT NULL UNIQUE,
+            mem_id     VARCHAR2(20) NOT NULL UNIQUE
         );
 
     2. Member_seq 시퀀스 생성
