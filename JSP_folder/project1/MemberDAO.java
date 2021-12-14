@@ -16,14 +16,17 @@ public class MemberDAO {
     public ArrayList<MemberVO> list() {
         ArrayList<MemberVO> list = new ArrayList<MemberVO>();
         try {
-            conDB();
+        //  conDB();
             String query = "select * from Member";
             System.out.println(query);
             ResultSet rs = stmt.executeQuery(query);
 
-            while(rs.next() {
+            while(rs.next()) {
                 String id = rs.getString("id");
             }
+        } catch(Exception e) {
+            
         }
+    //  return null;
     }
 }
