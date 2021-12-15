@@ -1,3 +1,4 @@
+package JSP_folder.tonic_project;
 public class MemberVO {
     private String id;
     private String name;
