@@ -79,54 +79,24 @@
 CREATE TABLE MEMBER {
 
 }
-회원 테이블(member)
-        · 회원번호(PK) = mno 
-        · 이름 = mname
-        · 성별 = mgender
-        · 생년월일 = mbirth
-        · 주소 = maddr
-        · 전화번호 = mtel
-        · email = memail
-        · id = id
-
 
 
 CREATE TABLE EMP {
 
 }
-관리자 테이블(employee)
-        · 사원번호(PK) = eno 
-        · 이름 = ename
-        · 성별 = egender
-        · 생년월일 = ebirth
-        · 주소 = eaddr
-        · 전화번호 = etel
-        · email = eemail
-        · id = id
-
 
 
 CREATE TABLE LOGINFO {
 
 }
-로그인 정보 테이블(loginfo)
-        · 로그인 코드(PK) = log_code 
-        · id = id 
-        · Password = pw
-
 
 
 CREATE TABLE NOTICE {
 
 }
-공지사항 테이블(notice)
-        · 게시물 번호(PK) = nidx
-        · 제목 = ntitle 
-        · 내용 = ncont // notice + contents
 
 
-
-CREATE TABLE PROD {
+CREATE TABLE PROD(상품 DB 테이블) {
 
 }
 상품 DB 
