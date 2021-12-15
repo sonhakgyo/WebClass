@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼</title>
+</head>
+<body>
+    <h2>폼</h2>
+    <form action="regist.php">
+        <p>
+            <input type="text" size="30" maxlength="20" placeholder="아이디를 입력하세요" required>
+        </p>
+        <p>
+            <input type="password" value="1111" readonly>
+        </p>
+        <p>
+            <fieldset>
+                <legend>성별</legend>
+                <label>남자<input type="radio" name="gender" checked></label> <label>여자<input type="radio"
+                        name="gender"></label>
+            </fieldset>
+        </p>
+        <p><input type="checkbox" checked> <input type="checkbox"> <input type="checkbox"></p>
+        <p><input type="file"></p>
+        <p>
+            <input type="button" value="확인" onclick="alert('안녕하세요!')"> <button type="button"
+                onclick="alert('안녕하세요!')">확인</button>
+        </p>
+        <p><input type="reset"></p>
+        <p><input type="submit"></p>
+        <p><input type="email"></p>
+        <p><input type="url" disabled></p>
+        <p><input type="tel"></p>
+        <p><input type="date"></p>
+        <p><input type="number" min="0" max="100" step="5"></p>
+        <p><input type="color"></p>
+        <p><input type="search"></p>
+        <p><input type="range" min="1" max="3" value="2"></p>
+        <p>
+            <select>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>jQuery</option>
+                <option>PHP</option>
+                <option>node.js</option>
+                <option>React</option>
+            </select>
+        </p>
+        <p><textarea cols="50" rows="5"></textarea></p>
+        <p><input type="text" list="language">
+            <datalist id="language">
+                <option value="client">HTML</option>
+                <option value="client">CSS</option>
+                <option value="client">JavaScript</option>
+                <option value="client">jQuery</option>
+                <option value="client">React</option>
+                <option value="server">PHP</option>
+                <option value="server">node.js</option>
+            </datalist>
+        </p>
+    </form>
+</body>
+</html>

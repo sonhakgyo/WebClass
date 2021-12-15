@@ -1,0 +1,40 @@
+PreparedStatement
+        - java.sql.PreparedStatement
+        - 자바에서 SQL 쿼리를 실행할 때 사용하는 클래스
+        - 커넥션을 통해 연동된 상태에서 자바 코드를 데이터베이스와 연결해준다.
+
+PreparedStatement의 setString(), setInt(), setDouble()
+        - 쿼리문이 유동적인 경우 '?'로 대체할 수 있다.
+        - '?'에 대체할 데이터가 문자열이라면 setString()을, 정수라면 setInt(), 실수는 setDouble()을 사용한다.
+     예)
+        ps = con.preparedStatement("SELECT * FROM student WHERE st_name=? AND st_NO=?");
+        ps.setString(1, "김종혁"); // 1번 물음표 자리에 "김종혁"을 String 형태로 삽입한다. 외따옴표가 추가된다.
+        ps.setInt(2, 3); // 2번 물음표 자리에 3을 Int 형태로 삽입한다.
+
+
+- 
+
+
+ResultSet
+        - java.sql.ResultSet
+        - SELECT 등의 조회 쿼리문을 실행한 후 돌아오는 조회 값을 포함하는 클래스
+
+ResultSet의 구조
+        - 결과로 가져온 데이터는 Table 형태로 흡사하다.
+        - ResultSet의 next()를 사용하여 값이 있는지 없는지 확인한다.
+        - next() 실행 후 get...() 메서드를 사용하여 값을 얻어온다.
+        - 여러 행이 있을 경우 반복문을 사용한다.
+
+boolean result = rs.next(); // 레코드가 1개라도 있으면 true, 없으면 false
+                           // 레코드를 확인하기 위해서는 최소 1회 next()를 실행해야 한다.
+                           // 실행하지 않은 초기 커서는 아무 것도 가리키지 않기 때문이다.
+
+
+
+
+
+
+
+
+
+

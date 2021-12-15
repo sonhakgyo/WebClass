@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우선순위</title>
+    <style>
+        #id-style-with-important { background-color: yellow !important; }
+        #id-style { background-color: blue; }
+        #id-style-2 {
+            background-color: skyblue;
+            margin: 50px;
+            padding: 50px;
+        }
+        .class-style {
+            background-color: red;
+        }
+        div {
+            display: block;
+            padding: 30px;
+            margin: 30px;
+            background-color: white;
+        }
+        div {
+            background-color: purple;
+        }
+        ul > li.li-class {  /* element 2개, class 1개 */
+            background-color: salmon;
+            color: deeppink;
+        }
+        ul { color: black; } /* element 1개 */
+        ul > li { /* element 2개 */
+            background-color: gold; 
+            color: aqua; 
+        }
+    </style>
+</head>
+<body>
+    <h2>우선순위</h2>
+    <div id="id-style-with-important" style="background-color: green;" id="id-style" class="class-style">div 1번(!important 적용 우선 / yellow)</div>
+    <div style="background-color: green;" id="id-style" class="class-style">div 2번(인라인 스타일 적용 / green)</div>
+    <div id="id-style">div 3번(id 스타일 적용 / 100점 -> blue)</div>
+    <div class="class-style">div 4번(class 스타일 적용 / 10점 -> red)</div>
+    <div>div 5번(마지막 적용된 스타일 적용 / purple)</div>
+    <div id="id-style-2" id="id-style">div 6번(id나 class속성은 먼저 적용한 속성의 스타일이 우선 / skyblue)</div>
+    <ul>
+        <li class="li-class">li 1번</li>
+    </ul>
+</body>
+</html>

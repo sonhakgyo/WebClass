@@ -1,0 +1,23 @@
+JSP에서 CSS를 적용하려고 한다. 
+
+각각 index.jsp, header.jsp, footer.jsp, layout.css 파일을 만들었다.
+그러나 문제가 발생했다. index.jsp, header.jsp, footer.jsp를 따로 만들지 않고. 
+하나의 .jsp 파일에서 css를 불러왔을 때는 잘 먹히던 경로가 index.jsp와 header.jsp로 파일을 분리하니
+header.jsp에서 작성한 <link rel="stylesheet" type="text/css" href="/layout.css">이 경로가 안 먹히는 것이다.
+<link rel="stylesheet" type="text/css" href="/layout/layout.css">
+<link rel="stylesheet" type="text/css" href="/webapp/layout.css"> 등 여하튼 다 안 먹힌다.
+
+검색을 했다. 검색은 "jsp css 적용"
+
+그랬더니 재작년 2019년 12월 딱 이때 즈음에 OKKY에서 같은 고민을 한 사람이 있었다.
+질문 글 링크 : https://okky.kr/article/657949
+나보다 더 오랜 시간 고민을 한 사람은 EmDev님의 해답을 보긴 하셨는지 해답을 최후의 댓글로 남기고 사라지셨다.
+
+정답 경로는 이것이었다.
+	<link rel = "stylesheet" type = "text/css" href = "${pageContext.request.contextPath}/layout/layout.css"> 
+
+-
+
+pageContext.request.contextPath에 대해 좀 더 알아보겠다.
+		pageContext 객체 : 현재 JSP 페이지에 대한 컨텍스트 객체
+		request 객체     : HTTP request에 해당하는 객체(HTTP 헤더, HTTP 바디), 요청 정보를 담고있는 객체

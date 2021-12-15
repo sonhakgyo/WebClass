@@ -1,0 +1,31 @@
+💎. map
+파이썬의 딕셔너리와 동일하다.
+이름 = 홍길동, 나이 = 19, 성별 = 남 
+키와 밸류로 구성되어 대응관계를 쉽게 표현할 수 있다.
+
+map은 순서없이 key를 통해 value를 얻는다.
+맵의 가장 큰 특징은 key로만 value 얻는다는 것이 중요하다.
+검색할 때 순차적으로 찾는 게 아니라 키값으로 바로 접근할 수 있다.
+
+map 함수는 import java.util.HashMap;
+
+💎. put, 집어넣을 때
+    map.put("people", "사람");
+    map.put("baseball", "야구");
+
+💎. get, 가져올 때
+    System.out.println(map.get("people"));
+    System.out.println(map.get("baseball"));
+
+💎. containsKey : 맵에 어떤 키가 있는지 조사한다.
+    System.out.println(map.containsKey("people"));    → True
+    System.out.println(map.containsKey("student"));   → False
+
+💎. remove : 맵의 항목을 삭제하는 메서드, Key값에 해당하는 (key, value)를 모두 삭제
+    System.out.println(map.remove("people"));
+
+💎. size : 맵의 개수를 알아낸다.
+    System.out.println(map.size());
+
+
+

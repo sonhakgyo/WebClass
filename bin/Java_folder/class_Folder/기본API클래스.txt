@@ -1,0 +1,160 @@
+🎁. API(Application Programming Interface)란?
+자바에서 개발자들을 위해 기본적으로 제공하는 클래스
+
+예를 들어 우리가 출력을 위해 사용했던 System.out.println() 메서드도 java.lang 패키지가 기본적으로 제공되기 때문에 사용할 수 있었던 일종의 API입니다. 자바에서 제공하는 API를 확인하고 싶다면 docs.oracle.com/javase/8/docs/api/index.html 사이트에 접속해서 API 문서를 확인할 수 있다.
+
+🎁. Object 클래스
+모든 클래스의 조상 클래스다. 즉, 자바의 모든 클래스는 Object 클래스를 상속받았으며 Object 클래스의 멤버를 사용한다.
+
+💎. Object 클래스에는 멤버 변수는 없으며 11개의 메서드가 있다.
+01. protected Object, clone() : 
+객체의 복사본을 반환한다. 인스턴스를 복사할 때 사용된다. 자신과 똑같은 인스턴스를 생성할 때 사용
+02. protected void, finalize() : 
+객체가 소멸할 때 호출된다.
+03. boolean, equals(Object object) : 
+object와 같은 객체인지 아닌지 참조변수를 비교하여 boolean 값으로 반환한다. 
+04. Class<?>, getClass() : 
+해당 객체의 클래스 정보를 전달(반환)한다.
+05. int, hashCode() : 
+해시 코드 값을 반환한다. 해시 코드란 해시함수를 통해 반환되는 객체가 저장된 위치 값이다. 
+즉, 서로 다른 객체는 서로 다른 해시 코드 값을 가진다.
+06. void, notify() : 대기 중인 하나의 스레드를 깨운다.
+07. void, notifyAll() : 대기 중인 모든 스레드를 깨운다.
+08. String, toString() : 
+객체에 대한 기본적인 정보를 문자열로 반환한다. Object 클래스에 정의된 toString 메서드는 클래스의 정보와 해시 코드를 반환한다.
+09. void, wait() : 현재의 스레드를 멈추고 대기한다.
+10. void, wait(long timeout) : timeout 만큼 스레드를 멈추고 대기한다.
+11. void, wait(long timeout, int nanos) : 실제로 일어난 시간만큼 스레드를 멈추고 대기한다.
+
+자손 클래스들은 Object 클래스들의 메서드를 그냥 사용할 수도 있지만 보통은 자신에게 맞게 오버라이딩하여 사용한다.
+
+
+🎁. 문자열 클래스
+문자열에 대한 처리를 위한 다양한 메서드가 정의되어 있는 클래스 
+
+Java에서는 String 클래스를 통해 문자열에 대한 처리를 제공한다. 다양한 메서드들이 제공되기 때문에 Java는 문자열을 다루기에 상당히 편리한 언어다.
+
+    String a = new String("Java");
+
+String 인스턴스를 생성할 때는 다른 객체의 생성과 마찬가지로 new 키워드로 메모리의 빈 공간을 확보하고 인스턴스를 생성해야 한다. 하지만 보통의 클래스와는 다르게 문자열은 프로그래밍을 할 때 자주 사용되므로 작업을 더 쉽게 하기 위해 기본 자료형을 선언하는 것처럼 사용하는 것도 가능하다.
+
+    String a = "Java"; // 마치 기본 자료형처럼 사용한다.
+
+<메서드>
+01. concat(문자열) : 문자열을 연결한다.
+원하는 문자열을 결합한다. 실제로는 문자열 외에 다른 자료형도 결합할 수 있는 + 연산자를 쓴다.
+02. sunstring(인덱스, 잘라낼 길이) : 
+문자열을 잘라낸다. 파라미터로 '인덱스 2개'를 사용할 경우에는 첫번째 인덱스로부터 두번째 인덱스의 전까지 잘라낸다.
+03. length() : 
+문자열의 길이를 반환한다. 문자열 전체에 대해 작업하는 반복문에 사용한다.
+04. toUpperCase() : 문자열을 대문자로 변경한다.
+05. toLowerCase() : 문자열을 소문자로 변경한다.
+06. charAt(인덱스) : 인덱스에 해당하는 글자를 반환한다.
+07. indexOf(문자열) : 문자열의 위치를 반환한다.
+08. equals(문자열) : 문자열이 같은지 boolean값으로 반환한다.
+++. equalsIgnoreCase() : 대소문자 구분없이 문자열을 비교하는 메서드다. boolean값으로 반환한다.
+09. trim() : 문자열 앞, 뒤에 있는 공백을 제거한다.
+10. replace(바꾸고 싶은 문자열, 바꿀 문자열)
+11. replaceAll(변환할 문자열, 변환될 문자열)
+12. valueOf() : 기본형을 String으로 변환시키는 메서드다.
+13. format() : 문자열에 적절한 포맷을 줄 수 있다. 활용 방법은 printf() 메서드와 같다. 문자열 내에 정수가 들어갈 자리에는 %d, 실수의 자리에는 %f, 다른 문자열의 자리에는 %s를 작성해놓고 순서대로 파라미터를 추가하면 된다.
+14. StringBuilder / StrungBuffer 
+String은 immutable(변하지 않는)한 객체이기 때문에 자주 사용할수록 속도가 느려진다. 왜냐하면 문자열을 작업할 때마다 인스턴스를 만들기 때문이다. 이러한 단점을 보완하는 클래스가 StringBuilder / StrungBuffer이다. 이 클래스들은 객체 안의 데이터를 내부적으로 변경할 수 있으므로 새로운 객체를 만들지 않는다. 즉, mutable(변할 수 있는)한 객체다.
+
+<StringBuffer 클래스의 메서드>
+00. append() : 매개변수로 입력된 값을 문자열로 바꾸어 더해주는 메서드
+00. reverse() : 문자열의 순서를 반대로 나열하는 메서드
+00. insert(int pos, Object object) : 두번째 매개변수의 값을 문자열로 바꾸어 pos인 위치에 추가하는 메서드 
+00. deleteCharAt(int index) : start의 위치부터 end 직전의 위치의 문자열을 제거하는 메서드
+00. deleteCharAt(int index) : index 위치에 있는 문자를 제거하는 메서드
+
+StringBuffer : StringBuilder와 사용하는 방법과 메서드가 똑같다. 두 클래스의 차이는 StringBuffer가 나중에 배울 멀티스레드에서 동기화 처리를 지원한다는 사실이다. 다만 이 동기화 처리가 StringBuffer의 성능을 저하하므로 직므과 같이 단일 스레드로 작성할 경우에는 StringBuilder를 사용하는 것이 유리하고 멀티스레드의 경우에는 동기화 처리를 지원하는 StringBuffer를 사용하는 것이 좋다.
+
+🎁. Wrapper 클래스 
+기본 자료형들을 객체로 다루는 데 사용한다.
+
+wrap(싸다, 포장하다)라는 단어에서 알 수 있듯이 Wrapper 클래스는 기본 자료형을 객체 자료형으로 포장하는 클래스다. 객체지향언어인 java에서 객체로 다루어지지 않는 기본 자료형들을 객체로 다루기 위해 도입한 클래스다. 
+
+모든 기본 자료형은 각각 자료형에 해당하는 Wrapper 클래스가 있다.
+기본 자료형과 다르게 Wrapper 클래스는 클래스이므로 인스턴스를 생성해서 사용한다.
+
+    Integer i = new Integer(100);
+    Double d = new Douible(3.14);
+
+Wrapper 클래스의 메서드들을 활용하면 다른 자료형으로 변환하기가 편리하다.
+
+✔.  Wrapper 클래스 -> 기본 자료형
+    자료형 + Value()의 메서드를 사용하면 기본 자료형으로 변경한다.
+
+    Integer i = new Integer(100);
+    int a = i.intValue();  <- int형으로 변환
+    double b = i.doubleValue();  <- double형으로 변환
+
+문자열 -> 숫자
+    int a = Integer.parseInt("100"); <- 문자 100이 int형 100으로 변환
+    double b = Double.parseDouble("3.14");
+
+숫자 -> 문자열 
+    int number = 36;
+    String s = Integer.toString(number);
+    System.out.println(s+36);  <- 3636으로 출력된다.
+
+문자열 -> Wrapper 클래스
+    Integer i = Integer.valueOf("100");
+    Float f = Float.valueOf("2.65");
+
+Wrapper 클래스는 immutable(변하지 않는)한 성격을 지닌다. 즉, 연산할 때마다 새로운 객체가 만들어진다. 
+'오토박싱'은 JDK 1.5버젼 이상부터 도입된 개념으로 기본 자료형을 자동으로 객체 자료형으로 변환시켜주는 것을 말한다. 
+
+    Integer i = 100;  <- 오토박싱 Integer i = new Integer(100)
+
+언박싱은 반대로 객체 자료형을 자동으로 기본 자료형으로 변환시켜주는 것을 말한다.
+
+    Integer i = new Integer(100);
+    int a = 3;
+    a = a + i; // 언박싱 a = a+i.intValue(); // 생략가능
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

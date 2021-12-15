@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math 객체</title>
+</head>
+
+<body>
+    <h2>Math 객체</h2>
+    <script>
+        'use strict';
+        console.log(Math.min());
+        console.log(Math.max());
+        console.log(Math.min(1, 10, -10, 1000, 0));
+        console.log(Math.min(1, 10, "-10", 1000, 0));
+        console.log(Math.min(1, 10, -10, "천", 0));
+
+        console.log(Math.round(10.49));
+        console.log(Math.round(10.5));
+        console.log(Math.round(-10.5));
+        console.log(Math.round(-10.51));
+
+        console.log(Math.floor(10.49));
+        console.log(Math.floor(10.5));
+        console.log(Math.floor(-10.5));
+        console.log(Math.floor(-10.51));
+
+        console.log(Math.ceil(10.49));
+        console.log(Math.ceil(10.5));
+        console.log(Math.ceil(-10.5));
+        console.log(Math.ceil(-10.51));
+
+        const ran1 = Math.random();
+        console.log(`랜덤한 수1 : ${ran1}`); // 0.1300741838693451
+        console.log(`1~10사이의 랜덤한 수 : ${Math.floor(ran1 * 10) + 1}`);
+
+        const ran2 = Math.random();
+        console.log(`랜덤한 수2 : ${ran2}`);
+        console.log(`1~45사이의 랜덤한 수 : ${Math.floor(ran2 * 45) + 1}`);
+    </script>
+</body>
+
+</html>

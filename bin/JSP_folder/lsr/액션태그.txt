@@ -1,0 +1,60 @@
+JSP 액션 태그(JSP Action Tags): jsp 구성요소 중 하나
+
+    · JSP 액션 태그는 여는 태그와 닫는 태그로 구성되어 있다.
+            예1) <jsp:include page="Test01.jsp"/>
+
+            예2) <jsp:include page="Test01.jsp></jsp:include> 
+
+            예3) <jsp:include page="Test01.jsp>
+                        <jsp:param name="user_name" value="김종혁"/> // param 끝에 /을 넣어준다.
+                 </jsp:include>
+
+1) <jsp:include> : 외부 JSP 파일을 포함한다.
+    ★  액션태그로 파라미터를 넘길 때 꼭 해줘야 하는 것이 있다. 그래야 '한글'이 전달된다.
+            예) <% request.setCharacterEncoding("UTF-8");
+
+                <jsp:include page="/layout.header.jsp">
+                    <jsp:param name="title" value="메인 페이지"/>
+                </jsp:include>
+
+
+2) <jsp:forward> : 다른 페이지로 포워드한다.
+            예) <jsp:forward page="/include_test/Test02.jsp"/>
+
+
+3) <jsp:useBean> : Java Bean을 사용한다    // DTO 데이터 세트
+            예) <jsp:useBean id="p1" class="PersonDTO" scope="request"> 
+                    // scope="page", "request", "session", "application"
+                    // pageContext.setAttribute("p1", new PersonDTO());
+                    // request.setAttribute("p1", new PersonDTO());
+                    // session.setAttribute("p1", new PersonDTO());
+                    // application.setAttribute("p1", new PersonDTO());
+                </jsp:useBean>
+
+                <jsp:setProperty name="p1" property="name" value="김피카츄"/> // p1.setName("김피카츄"); 와 같다.
+                <jsp:setProperty name="p1" property="age" value="10"/>       // p1.setAge(10);
+                    - setProperty는 setter와 자동 연결되는 것이다.
+                    - DTO 규약사항처럼 getter, setter가 있어야 setProperty로 자동 연결이 가능한 것이다.
+                    - name은 Bean의 이름 즉, id
+                    - property는 변수
+                    - value는 값
+
+                <jsp:forward page="Test10.jsp"/>
+
+    ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ setProperty를 가져다 쓸 때는 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+                <jsp:useBean id="p1" class="PersonDTO" scope="request"/>
+                    - PersonDTO p1 = (PersonDTO)request.setAttribute("p1"); 과 같다.
+                    - scope="page" 였다면 (PersonDTO)pageContext.setAttribute("p1");
+
+                <jsp:getProperty name="p1" property="name"/>님은,     // p1.getName();
+                <jsp:getProperty name="p1" property="age"/>살입니다.  // p1.getAge();
+
+
+
+4) <jsp:plug-in> : Java Applet을 실행한다. // 애플릿이라는 개념을 이제는 잘 쓰지 않는다.
+5) <jsp:setProperty> : 해당 빈에 프로퍼티를 저장한다.
+6) <jsp:getProperty> : 해당 빈의 프로퍼티를 호출한다.
+
+
+

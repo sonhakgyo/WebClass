@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수의 범위</title>
+</head>
+
+<body>
+    <h2>변수의 범위</h2>
+    <script>
+        'use strict';
+        var num1 = 10;  // 전역변수
+
+        function func1() {
+            console.log(num1);
+            num1 = 20;  //  전역변수 num1의 값을 재대입 : 10 -> 20
+        }
+
+        func1();
+        console.log(num1);
+
+        var num2 = 30;  // 전역변수
+
+        function func2() {
+            var num2 = 40;  // 지역변수 -> 같은 이름의 전역변수를 사용하지 않음
+            console.log(`num2 : ${num2}`);  // 지역변수
+
+        }
+
+        func2();
+        console.log(`num2 : ${num2}`);  // 전역변수
+
+        var num3 = 50;  // 전역변수
+        if (num3) {
+            num3 = 100; // 전역변수 num3의 값을 재대입 : 50 -> 100
+            console.log(`num3 : ${num3}`);
+        }
+        console.log(`num3 : ${num3}`);
+
+        // 여기서 문제!!(버그)
+        var num4 = 50;  //전역변수
+        if (num4) {
+            var num4 = 100; // 지역변수(x) -> 전역변수
+            console.log(`num4 : ${num4}`);
+        }
+        console.log(`num4 : ${num4}`);
+
+        let num5 = 50;
+        if (num5) {
+            let num5 = 100; // 지역변수
+            console.log(`num5 : ${num5}`);
+        }
+        console.log(`num5 : ${num5}`);
+    </script>
+</body>
+
+</html>

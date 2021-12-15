@@ -1,0 +1,120 @@
+EL과 JSTL 
+
+EL(Expression Language, 표현언어)
+                - ${표현식}
+                - <% %>와 <%= %> 대신 EL/JSTL 사용을 권장한다.
+                - 자바는 자바대로 웹은 웹대로 분리한다.
+                - 네 가지 영역에 속하는 모든 Attribute를 사용할 수 있다.
+                - 수치 연산, 관계 연산, 논리 연산이 가능하다.
+                - 자바 클래스 메서드 호출 기능을 제공한다.
+                - EL만의 기본 객체를 제공한다.
+                - 표기법 : ${expr}
+
+        EL의 자료형
+                - Boolean
+                - 정수
+                - 실수
+                - 문자열
+                - null
+
+        EL 수치 연산자
+                - +, -, /(div), %(mod)
+                - 객체가 null이면 0으로 처리된다.
+                - 나눗셈의 결과는 double
+
+        EL 관계 연산자
+                - == 또는 eq
+                - != 또는 nu
+                - < 또는 lt
+                - > 또는 gt
+                - <= 또는 le
+                - >= 또는 ge
+
+        애트리뷰트
+                1. ${ 영역명.속성명 }
+                        PAGE 영역의 속성        : ${pageScope.속성명}
+                        REQUEST 영역의 속성     : ${requestScope.속성명}
+                        SESSION 영역의 속성     : ${sessionScope.속성명}
+                        APPLICATION 영역의 속성 : ${applicationScope.속성명}
+                
+                2. ${ 속성명 }
+                        - 네 개의 영역을 차례대로 검색해서 애트리뷰트가 존재하는지 확인한다.
+                                · page < request < session < application
+                                · 최종적으로 없으면 아무것도 표현하지 않는다.
+
+        파라미터
+                1. ${ param.파라미터명 } == request.getParameter(" ");
+                        · 알아서 자료형을 처리하기 때문에 사용이 편리하다.
+                        · parsing 작업이 필요 없다.
+        
+        EL 11가지 내장객체
+                1. pageContext      : JSP page 객체
+                2. pageScope        : pageContext 객체에 저장된 속성
+                3. requestScope     : request 객체에 저장된 속성
+                4. sessionScope     : session 객체에 저장된 속성
+                5. applicationScope : application 객체에 저장된 속성 
+                6. param        : request 객체에 저장된 파라미터
+                7. paramValues  : 1개의 파라미터에 값이 여러 개 있을 경우 사용
+                8. header       : request.getHeader(헤더명)과 동일하다.
+                9. headerValues : 1개의 헤더에 값이 여러 개 있을 경우 사용한다.
+                10. cookie      : 클라이언트 브라우저에 저장된 쿠키
+                11. initParam   : application.getInitParameter(이름)의 결과와 동일하다.
+
+
+
+
+
+JSTL
+        JSP Standard Tag Library 
+        활용도가 매우 높은 커스텀 태그를 묶어놓은 기능 라이브러리다.
+        핵심, 데이터베이스, 함수에 많이 쓴다.
+
+
+
+        <c:set var = "uName">${param.userName}</c:set>  // 방법1
+        <c:set var = "uAge" value = "${param.userAge}"/>   // 방법2
+
+        ${uName}님은 ${uAge}세입니다.
+
+[if문]  // JSP에서는 else가 없다.
+        <c:if test = "${uAge >= 20}"> // if문
+                성인은 성인인데
+        </c:if>
+        <c:if test = "${uAge < 20}">  // if문
+                미성년자인데
+        </c:if>
+
+[choose문] // 다중 if문
+        <c:choose>
+                <c:when test = "${uAge >= 20}">
+                        성인 혹은 대학생입니다. <br>
+                </c:when>
+                <c:when test = "${uAge >= 17}">
+                        고등학생입니다. <br>
+                </c:when>
+                <c:when test = "${uAge >= 14}">
+                        중학생입니다. <br>
+                </c:when>
+                <c:when test = "${uAge >= 8}">
+                        초등학생입니다. <br>
+                </c:when>
+                <c:otherwise>
+                        미취학 아동입니다.
+                </c:otherwise>
+        </c:choose>
+
+[for문] // 자바에서 '확장 for문', 'forEach문' 
+        <c:forEach var = "language" items = "${paramValues.language}"> // for(String s : language)와 같다.
+                ${language}
+        </c:forEach>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+public class Thread2 {
+    public static void main(String[] args) {
+        System.out.println("현재 실행되고 있는 스레드의 이름 : " + Thread.currentThread().getName());
+        System.out.println("실행되고 있는 스레드의 상태 : " + Thread.currentThread().getState());
+        System.out.println("실행되고 있는 스레드의 우선순위 : " + Thread.currentThread().getPriority());
+    }
+}
+
+class Thread3 extends Thread {
+    public void run() {
+        this.setName("Thread3");
+        System.out.println("Thread Name : " + Thread.currentThread().getName());
+        System.out.println("Thread state : " + Thread.currentThread().getState());
+        System.out.println("Thread priority : " + Thread.currentThread().getPriority());
+    }
+}
+
+
+The type java.lang.Enum cannot be resolved 오류가 실행된다.

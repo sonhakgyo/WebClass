@@ -1,0 +1,25 @@
+회원가입 구현
+    1. member TABLE 생성
+        CREATE TABLE member(
+            mem_no     NUMBER PRIMARY KEY,
+            mem_name   VARCHAR2(20) NOT NULL,
+            mem_gender VARCHAR2(6)  NOT NULL,
+            mem_birth  VARCHAR2(10) NOT NULL,
+            mem_addr   VARCHAR2(40) NOT NULL,
+            mem_tel    VARCHAR2(13) NOT NULL UNIQUE,
+            mem_email  VARCHAR2(50) NOT NULL UNIQUE,
+            mem_id     VARCHAR2(20) NOT NULL UNIQUE
+        );
+
+    2. Member_seq 시퀀스 생성
+        CREATE SEQUENCE member_seq;
+
+    3. join/joinVie.jsp 추가 : 회원가입 <폼> 페이지(뷰)
+
+    4. join/script.js(자바스크립트) 추가 : 두 비밀번호가 일치하는지 확인 후 전송하는 함수 정의
+
+    5. join/joinLogic.jsp 추가 : DB에 회원정보를 INSERT하는 페이지(로직 페이지)
+    
+    6. join/joinResultView.jsp 추가 : 등록 결과를 보여주는 페이지(뷰)
+
+    7. myhome/layout/header.jsp 수정

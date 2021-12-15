@@ -1,0 +1,137 @@
+검토
+        . 공지사항을 board, post, notice 테이블 중 뭐로 할지
+        . 공지사항 게시물 번호를 no으로 할 지, idx로 할 지
+        . 각 상품코드를 no으로 할 지, code로 할 지
+        . no으로 통일할 지 idx로 분별을 줄 지
+        . 로그인 정보 테이블의 id, pw는 회원 id, pw만 있어도 되는지
+
+
+회원 테이블(member)
+        · 회원번호(PK) = mno 
+        · 이름 = mname
+        · 성별 = mgender
+        · 생년월일 = mbirth
+        · 주소 = maddr
+        · 전화번호 = mtel
+        · email = memail
+        · id = id
+
+관리자 테이블(employee)
+        · 사원번호(PK) = eno 
+        · 이름 = ename
+        · 성별 = egender
+        · 생년월일 = ebirth
+        · 주소 = eaddr
+        · 전화번호 = etel
+        · email = eemail
+        · id = id
+
+로그인 정보 테이블(loginfo)
+        · 로그인 코드(PK) = log_code 
+        · id = id 
+        · Password = pw
+
+공지사항 테이블(notice)
+        · 게시물 번호(PK) = nidx
+        · 제목 = ntitle 
+        · 내용 = ncont // notice + contents
+
+상품 DB 
+        종합비타민(vita)
+            · 상품코드(PK) = v_no
+            · 상품명 = v_name
+            · 가격 = v_price
+            · 상세정보 = v_details
+            · 유통기간 = v_period
+            · 제조일자 = v_date
+            · 원산지 = v_origin
+            · 제조사 = v_maker
+            · 판매량 = v_sales
+            · 재고량 = v_stock
+
+        유산균(lact)
+            · 상품코드(PK) = l_no
+            · 상품명 = l_name
+            · 가격 = l_price
+            · 상세정보 = l_details
+            · 유통기간 = l_period
+            · 제조일자 = l_date
+            · 원산지 = l_origin
+            · 제조사 = l_maker
+            · 판매량 = l_sales
+            · 재고량 = l_stock
+
+        눈 건강(eyes)
+            · 상품코드(PK) = e_no
+            · 상품명 = e_name
+            · 가격 = e_price
+            · 상세정보 = e_details
+            · 유통기간 = e_period
+            · 제조일자 = e_date
+            · 원산지 = e_origin
+            · 제조사 = e_maker
+            · 판매량 = e_sales
+            · 재고량 = e_stock
+
+
+
+
+CREATE TABLE MEMBER {
+
+}
+
+
+CREATE TABLE EMP {
+
+}
+
+
+CREATE TABLE LOGINFO {
+
+}
+
+
+CREATE TABLE NOTICE {
+
+}
+
+
+CREATE TABLE PROD(상품 DB 테이블) {
+
+}
+상품 DB 
+        종합비타민(vita)
+            · 상품코드(PK) = v_no
+            · 상품명 = v_name
+            · 가격 = v_price
+            · 상세정보 = v_details
+            · 유통기간 = v_period
+            · 제조일자 = v_date
+            · 원산지 = v_origin
+            · 제조사 = v_maker
+            · 판매량 = v_sales
+            · 재고량 = v_stock
+
+        유산균(lact)
+            · 상품코드(PK) = l_no
+            · 상품명 = l_name
+            · 가격 = l_price
+            · 상세정보 = l_details
+            · 유통기간 = l_period
+            · 제조일자 = l_date
+            · 원산지 = l_origin
+            · 제조사 = l_maker
+            · 판매량 = l_sales
+            · 재고량 = l_stock
+
+        눈 건강(eyes)
+            · 상품코드(PK) = e_no
+            · 상품명 = e_name
+            · 가격 = e_price
+            · 상세정보 = e_details
+            · 유통기간 = e_period
+            · 제조일자 = e_date
+            · 원산지 = e_origin
+            · 제조사 = e_maker
+            · 판매량 = e_sales
+            · 재고량 = e_stock

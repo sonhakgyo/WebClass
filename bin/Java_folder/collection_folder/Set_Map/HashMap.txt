@@ -1,0 +1,38 @@
+HashMap
+    - Key와 Value 한쌍(pair, entry)을 저장된다.
+    - 그러므로 검색에 용이하다.
+
+    - Key는 중복이 불가능하다(=Set 타입).
+    - Value는 중복이 가능하다(=Collection 타입).
+
+    - Map 자료구조는 순서를 따지지 않기 때문에 Set으로 묶은 후 iterator를 통해 순서를
+      부여받아야 한다.
+    
+    - Key <--> |해시테이블| <--> Value
+
+
+* K = Key, V = Value 
+* HashMap<K, V> 객체명 = new HashMap<K, V>():
+* HashMap<K, V> 객체명 = new HashMap<>(용량):
+
+함수
+    clear()
+        - 모든 값(데이터, 객체) 제거한다.
+
+    containsKey()
+        키가 있는지 검사한다.
+    containsValue()
+        값이 있는지 검사한다.
+    
+    get(Object Key) 
+        Key값을 주고 그 짝인 Value값을 가져온다.
+
+    isEmpty
+        비어있는지 확인한다.
+
+    keySet()
+        HashMap에 저장된 모든 키가 저장된 형태(=Set 타입)    
+    values()
+        HashMap에 저장된 모든 값이 저장된 형태(=Collection 타입)
+
+

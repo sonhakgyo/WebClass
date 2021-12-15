@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition - 2</title>
+    <style>
+        h2 { text-align: center; }
+        #ex {
+            position: relative;
+            width: 800px;
+            height: 400px;
+            margin: 0 auto;
+            border-radius: 30px;
+            border: 5px solid black;
+            padding: 30px;
+        }
+        .box {
+            font-size: 20px;
+            position: relative;
+            width: 140px;
+            height: 140px;
+            margin-bottom: 50px;
+            background-color: gold;
+        }
+        p {
+            text-align: center;
+            padding-top: 50px;
+            font-weight: bold;
+        }
+        #ex:hover > .box {
+            transform: rotate(720deg);
+            margin-left: 650px;
+        }
+        #no-delay {
+            transition-duration: 3s;
+        }
+        #delay {
+            transition-duration: 2s;
+            transition-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <h2>transition - 2</h2>
+    <div id="ex">
+        <div id="no-delay" class="box"><p>(❁´◡`❁)</p></div>
+        <div id="delay" class="box"><p>(┬┬﹏┬┬)</p></div>
+    </div>
+</body>
+</html>

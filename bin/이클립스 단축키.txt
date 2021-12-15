@@ -1,0 +1,29 @@
+이클립스 단축키
+
+★  00. Shift + Enter : 다음줄로 바로 내려가기 
+★  00. Ctrl + Shift + Enter : 윗줄로 엔터 ↔ Shift + Enter
+    00. Ctrl + / : 주석 처리/해제
+    00. Ctri + D : 한 줄 지우기
+    00. Ctrl + 1 : 빠른 소스코드 교정
+★  00. Ctrl + Shift + Delete : 현재 커서 위치에서 라인 끝까지 삭제
+★  00. Ctrl + Shift + F : 자동 정렬(=코드 포맷팅)
+★  00. Ctrl + Shift + O : import문 자동 생성
+    00. Alt + Shift + Z : Surround With 메뉴, 블록 드래그한 문장을 퀵 메뉴로 감싼다.
+★  00. Alt + Shift + S : 생성자, 게터와 세터 빠른 생성 단축키
+    00. Alt + Shift + R : 선택된 이름 한꺼번에 바꾸기
+★  00. Ctri + Shift + / : 블록 주석 설정 /* */
+★  00. Ctri + Shift + \ : 블록 주석 해제 (이클립스는 역슬래시'\'를 눌러야 해제)
+    00. Alt + Shift + J : 해당 메서드/클래스에 대한 주석 생성
+    00. Alt + 방향키(←, →) : 열려있는 탭 이동
+★  00. Alt + 방향키(↑, ↓) : 커서 위치한 줄 이동
+★  00. Ctrl + Alt + 방향키 : 커서 위치한 줄 복사
+    00. tab : 들여쓰기
+★  00. Shift + tab : 내여쓰기 
+
+이클립스 글자 크기 조정
+왼쪽 에디터 폴더 : 
+Window - Preferences - General - Appearance - Tree and Editor Folders (에디터 폴더)
+Window - Preferences - General - Appearance - Part title font 
+
+
+
