@@ -12,7 +12,7 @@ public class MemberDAO {
     private Connection con;
     private Statement stmt;
     private ResultSet rs;
-
+/*
     public ArrayList<MemberVO> list() {
         ArrayList<MemberVO> list = new ArrayList<MemberVO>();
         try {
@@ -29,4 +29,5 @@ public class MemberDAO {
         }
     //  return null;
     }
+*/
 }

@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class ex { 
     public static void main(String[] args) {
         MemberDAO dao = new MemberDAO();
-        ArrayList<MemberVO> list = dao.list();
+    //  ArrayList<MemberVO> list = dao.list();
 
         for(int i = 0; i<list.size(); i++) {
             MemberVO data = (MemberVO)list.get(i);
