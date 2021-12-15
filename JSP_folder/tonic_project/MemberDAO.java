@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+package JSP_folder.tonic_project;
+>>>>>>> branch 'main' of https://github.com/sonhakgyo/WebClass.git
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
