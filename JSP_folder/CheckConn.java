@@ -1,6 +1,6 @@
 package JSP_folder;
 
-public class test3 {
+public class CheckConn {
 	public static void main(String[] args) {
 	//  Push
 		System.out.println("push to origin?");
