@@ -1,3 +1,4 @@
+package WebClass;
 // package WebClass.JAVA;
 
 // public class TestThread extends Thread {
@@ -11,7 +12,7 @@
 //     }
 
 //     public void stop1(){
-//       System.out.println("thred stop"); // t1.start() 메서드 확인 겸?
+//       System.out.println("thread stop"); // t1.start() 메서드 확인 겸?
 //     }
 
 //     public void fly(){
