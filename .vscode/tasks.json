@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "java",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput:WebClass}",
+				"${dependencies:WebClass}",
+				"${compileOutput:WebClass_90467d98}",
+				"${dependencies:WebClass_90467d98}"
+			],
+			"problemMatcher": [],
+			"label": "java: exportjar:WebClass",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

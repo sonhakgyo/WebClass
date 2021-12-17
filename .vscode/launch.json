@@ -1,0 +1,1050 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch CheckConn",
+            "request": "launch",
+            "mainClass": "JSP_folder.CheckConn",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Connection1",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.Connection1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch ResultSet1",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.ResultSet1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test01",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.eclipse_q.Test01",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test02",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.eclipse_q.Test02",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test03",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.eclipse_q.Test03",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test04",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.eclipse_q.Test04",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exception1",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Exception1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exception2",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Exception2",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exception3",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Exception3",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exception4",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Exception4",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exception5",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Exception5",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Finally",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Finally",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Rethrow",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Rethrow",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Try",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Try",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Try2",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Try2",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddFrame",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.AddFrame",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddFrame2",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.AddFrame2",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddFrame3",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.AddFrame3",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Layout1",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.Layout1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch MenuTest",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.MenuTest",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch MouseEvent1",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.MouseEvent1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Anonymous2",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.Anonymous2",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Anonymous3",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.Anonymous3",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Anonymous4",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.Anonymous4",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch ButtonTest",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.ButtonTest",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch InnerClass2",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.InnerClass2",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjectClass",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.ObjectClass",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch OuterClass1",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.OuterClass1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShapeMain",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.ShapeMain",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Wrapper",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.Wrapper",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrList1",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.ArrList1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrList2",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.ArrList2",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayList1",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.ArrayList1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch BubbleSort1",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.BubbleSort1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Generic1",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Generic1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Generic2",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Generic2",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenericCalculator",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.GenericCalculator",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenericMain",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.GenericMain",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch InsertionSort1",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.InsertionSort1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedList1",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.LinkedList1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Map1",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Map1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Map2PhoneBookMain",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Map2PhoneBookMain",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Queue1",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Queue1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch SelectionSort1",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.SelectionSort1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListAndSet",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Set_Map.ListAndSet",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch MapTest",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Set_Map.MapTest",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch SetTest",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Set_Map.SetTest",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch WhySet",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Set_Map.WhySet",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch SingleMain",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.SingleMain",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stack1",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Stack1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch TreeSet1",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.TreeSet1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Grade",
+            "request": "launch",
+            "mainClass": "Java_folder.exam.Grade",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeapYear",
+            "request": "launch",
+            "mainClass": "Java_folder.exam.LeapYear",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Input_Output01",
+            "request": "launch",
+            "mainClass": "Java_folder.input_output.Input_Output01",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Input_Output02",
+            "request": "launch",
+            "mainClass": "Java_folder.input_output.Input_Output02",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Serializable01",
+            "request": "launch",
+            "mainClass": "Java_folder.input_output.Serializable01",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch BigDecimal1",
+            "request": "launch",
+            "mainClass": "Java_folder.package_folder.BigDecimal1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Format1",
+            "request": "launch",
+            "mainClass": "Java_folder.package_folder.Format1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Scanner1",
+            "request": "launch",
+            "mainClass": "Java_folder.package_folder.Scanner1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Scanner2",
+            "request": "launch",
+            "mainClass": "Java_folder.package_folder.Scanner2",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch MethodTrim",
+            "request": "launch",
+            "mainClass": "Java_folder.study.MethodTrim",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjectTest",
+            "request": "launch",
+            "mainClass": "Java_folder.study.ObjectTest",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShapeMain(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.study.ShapeMain",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch foreach",
+            "request": "launch",
+            "mainClass": "Java_folder.study.foreach",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread1",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread3",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread3",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_Synchro1",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_Synchro1",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_Synchro2",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_Synchro2",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_Synchro3",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_Synchro3",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_join",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_join",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_sleep",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_sleep",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_yield",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_yield",
+            "projectName": "WebClass_90467d98"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hello(1)",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch CheckConn(1)",
+            "request": "launch",
+            "mainClass": "JSP_folder.CheckConn",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Connection1(1)",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.Connection1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch ResultSet1(1)",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.ResultSet1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test01(1)",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.eclipse_q.Test01",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test02(1)",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.eclipse_q.Test02",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test03(1)",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.eclipse_q.Test03",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test04(1)",
+            "request": "launch",
+            "mainClass": "JSP_folder.lsr.eclipse_q.Test04",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exception1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Exception1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exception2(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Exception2",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exception3(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Exception3",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exception4(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Exception4",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exception5(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Exception5",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Finally(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Finally",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Rethrow(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Rethrow",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Try(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Try",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Try2(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Exception.Try2",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddFrame(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.AddFrame",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddFrame2(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.AddFrame2",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddFrame3(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.AddFrame3",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Layout1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.Layout1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch MenuTest(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.MenuTest",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch MouseEvent1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.Java_GUI_Programming.MouseEvent1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Anonymous2(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.Anonymous2",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Anonymous3(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.Anonymous3",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Anonymous4(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.Anonymous4",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch ButtonTest(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.ButtonTest",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch InnerClass2(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.InnerClass2",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjectClass(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.ObjectClass",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch OuterClass1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.OuterClass1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShapeMain(2)",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.ShapeMain",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Wrapper(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.class_Folder.Wrapper",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrList1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.ArrList1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrList2(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.ArrList2",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayList1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.ArrayList1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch BubbleSort1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.BubbleSort1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Generic1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Generic1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Generic2(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Generic2",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenericCalculator(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.GenericCalculator",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenericMain(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.GenericMain",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch InsertionSort1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.InsertionSort1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedList1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.LinkedList1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Map1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Map1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Map2PhoneBookMain(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Map2PhoneBookMain",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Queue1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Queue1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch SelectionSort1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.SelectionSort1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListAndSet(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Set_Map.ListAndSet",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch MapTest(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Set_Map.MapTest",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch SetTest(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Set_Map.SetTest",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch WhySet(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Set_Map.WhySet",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch SingleMain(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.SingleMain",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stack1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.Stack1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch TreeSet1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.collection_folder.TreeSet1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Grade(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.exam.Grade",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeapYear(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.exam.LeapYear",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Input_Output01(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.input_output.Input_Output01",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Input_Output02(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.input_output.Input_Output02",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Serializable01(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.input_output.Serializable01",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch BigDecimal1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.package_folder.BigDecimal1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Format1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.package_folder.Format1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Scanner1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.package_folder.Scanner1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Scanner2(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.package_folder.Scanner2",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch MethodTrim(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.study.MethodTrim",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjectTest(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.study.ObjectTest",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShapeMain(3)",
+            "request": "launch",
+            "mainClass": "Java_folder.study.ShapeMain",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch foreach(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.study.foreach",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread3(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread3",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_Synchro1(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_Synchro1",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_Synchro2(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_Synchro2",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_Synchro3(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_Synchro3",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_join(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_join",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_sleep(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_sleep",
+            "projectName": "WebClass"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_yield(1)",
+            "request": "launch",
+            "mainClass": "Java_folder.thread_folder.Thread_yield",
+            "projectName": "WebClass"
+        }
+    ]
+}
