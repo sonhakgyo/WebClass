@@ -1,0 +1,95 @@
+** 컨텍스트 패스(Context Path)
+        - 톰캣, WAS(웹 어플리케이션 서버)에서 웹 어플리케이션을 구분하기 위한 경로(PATH)를 말한다.
+        - 이클립스에서 프로젝트를 생성할 때마다 자동으로 Servers/tomcat 폴더/server.xml에 입력한다.
+        - 스프링에서도 공부한다.
+
+서블릿 초기화 : ServletConfig 라는 클래스를 이용해 서블릿 초기화 작업을 한다.
+        - 특정 서블릿이 생성될 때 초기에 필요한 데이터들을 초기화하는 것을 서블릿 초기화라고 한다.
+        - 필요한 데이터 : 아이디 정보, 특정 경로 ··· = 초기화 파라미터(서블릿이 생성될 때 필요한 데이터)
+        - ServletConfig 클래스를 이용해서 초기화 파라미터 사용(접근)이 가능하다.
+        - 서블릿 초기화릏 하기 위한 두가지 방법이 있다.
+            (1). 초기화 파라미터를 web.xml에 기술한다.
+            (2). web.xml 대신 서블릿 파일에 직접 기술하는 방법도 있다.
+
+    (1). web.xml에 초기화 파라미터 기술하기
+            Servlet 클래스 작성
+                    |
+            web.xml에 초기화 파라미터 입력
+                    |
+            ServletConfig 메서드 이용해서 데이터를 사용(접근)한다.
+
+
+    (2). 서블릿 파일에 어노터에션(@)을 통한 초기화 파라미터를 직접 기술하는 방법
+            Servlet 클래스 작성
+                    |
+            어노테이션 @WebInitParam에 초기화 파라미터 작성
+            예) @WebServlet(urlPatterns = {"/Init"}, @WebInitParam(name="id", value="test11"), ··· })
+                    |
+            ServletConfig 메서드 사용
+
+
+
+** ServletContext
+
+ServletContext를 이용한 (전체 어플리케이션) 데이터 공유
+        - 여러 개의 Servlet에서 데이터를 공유해야 할 경우에 context parameter를 사용한다.
+        - web.xml 파일에 데이터를 작성하면 Servlet에서 공유할 수 있다.
+
+    순서
+        - Servlet 클래스 작성
+        - web.xml 파일에 context parameter 기술
+        - ServletContext 메서드를 이용해 데이터 불러오기
+            getServletContext() : ServletContext를 얻어오는 메서드
+            예) String id   = getServletContext().getInitParameter("id");
+            예) String pw   = getServletContext().getInitParameter("pw");
+            예) String name = getServletContext().getInitParameter("name");
+
+
+** ServletContextListener
+
+ServletContextListener(contextInitialized(), contextDestroy())
+        - 웹 어플리케이션을 감시하는 리스너
+        - 해당하는 어플리케이션의 시작, 종료 시에 호출된다.
+        - 리스너를 작성(=제작)하고, web.xml 만든 리스너를 클래스로 정의
+
+        @Override 
+        void contextInitialized(ServletContextEvent arg0) { }  // Context가 시작될 때
+
+        @Override
+        void contextDestroyed(ServletContextEvent agr0) { }    // Context가 종료될 때
+
+
+
+** 자바 빈즈 혹 자바 빈
+        - 데이터 저장소, 데이터 객체
+        - 데이터를 저장하기 위한 필드와 데이터를 컨트롤하는 getter/setter 메서드를 하나의 쌍으로 가지고 있는 클래스
+        - getter/setter 메서드는 자바빈 필드의 데이터를 저장하고 조회하는 작업을 한다.
+
+    자바 빈 만들기
+        * 패키지 선언
+        - com.test.Ex.클래스이름(빈클래스명)
+
+        * 필드 선언
+        - private String name; // 이름을 저장할 필드 선언
+        - private String id;   // 아이디를 저장할 필드 선언 
+
+    getter/setter 메서드 정의
+        프로퍼티
+                - private 필드를 외부에서 접근하기 위해 공개형 접근제어자 public으로 메서드를 정의해놓고 
+                  이를 통해 간접적으로 필드에 접근하는 방식?
+                - 필드 형태로 기술하고 간적접으로 메서드를 호출한다.
+
+자바 빈과 관련된 액션 태그
+        <jsp:useBean>     --> 자바 빈 생성  // XML 문법       
+        <jsp:getProperty> --> 자바 빈에서 정보를 가져온다.
+        <jsp:setProperty> --> 자바 빈에 정보를 저장한다.
+
+        <jsp:useBean> 기본 형식
+        <jsp:useBean id = "Bean명" class = "패키지~클래스명" [scope = "범위"]/>
+
+        <jsp:getProperty> 형식
+        <jsp:getProperty name = "Bean명" property = "프로퍼티명"/> 
+                - 회원의 이름을 얻기 위해 getName()을 호출하는 것과 같다.
+
+        <jsp:setProperty> 형식
+        <jsp:setProperty name = "Bean명" property = "프로퍼티명" value = "값"/> 

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    width: 100%;
+}
+header {
+    width: 100%;
+    background-color: black;
+}
+nav > ul {
+    height: 50px;
+    margin: 0;
+    list-style: none;
+    color: white;
+}
+nav > ul > li {
+    float: left;
+    padding: 10px; 
+    margin: 5px 5px;
+}
+
+/*
+    구형폰 : 320px
+    현재폰 : 360px ~ 375px
+*/
+nav, #contents {
+    width: 310px;
+    margin: 0 auto;
+}
+
+nav > ul {
+    font-size: 12px;
+}
+
+#intro {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#intro > img {
+    width: 100%;
+    padding: 10px;
+}
+
+#desc {
+    width: 100%;
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+footer > p {
+    text-align: center;
+    line-height: 10px;
+}
+
+/*
+    테블릿 : 768px ~
+*/
+@media screen and (min-width: 768px){
+    nav, #contents {
+        width: 750px;
+        margin: 0 auto;
+    }
+    #intro {
+        width: 100%;
+    }
+    #intro > img {
+        width: 20%;
+        padding: 10px;
+    }
+    #desc {
+        width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+    footer {
+        height: 70px;
+        padding: 30px;
+        background-color: gray;
+    }
+}
+
+/*
+    데스크탑 가로 사이즈 : 1024px ~ 1280px
+*/
+@media screen and (min-width: 1024px) {
+    nav, #contents {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    #intro > img {
+        width: 15%;
+        padding: 10px;
+        float: left;
+    }
+    #desc {
+        display: inline-block;
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        border: 3px dashed black;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    footer {
+        clear: both;
+        height: 100px;
+        padding: 50px;
+        background-color: black;
+    }
+    footer > p {
+        line-height: 5px;
+    }
+}

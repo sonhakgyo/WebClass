@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자기초</title>
+    <style>
+        * {
+            padding: 0; /* 안쪽 여백 */
+            margin: 0;  /* 바깥 여백 */
+            color: magenta;
+        }
+        p {
+            color: darkslateblue;
+        }
+        h1 {
+            color: darkgreen;
+        }
+        #tag_selector {
+            color: blueviolet;
+        }
+        #id_selector {
+            color: deeppink;
+            font-style: oblique; /* italic체랑 차이가 뭐야? */
+        }
+        .class_selector {
+            color: turquoise;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>전체 선택자</h1>
+    <p>* : html 내에 등장하는 모든 형태를 선택하는 선택자(초기화, 기본설정값)</p>
+    <br>
+
+    <h1 id="tag_selector">태그 선택자</h1>
+    <p>h1, h2, p, a, img : html 내에 등장하는 특정한 태그를 선택하는 선택자</p>
+    <br>
+
+    <h1 id="id_selector">아이디 선택자</h1>
+    <p>
+        본문 id="name" | 스타일 #name { } 
+    <br>특정한 이름을 부여하는 선택자, html 화면 내에 한 번만 사용 가능하다.
+    <br>주로 큰 단락, 부모에서 사용, 위치 이동, 이름
+    </p>
+    <br>
+
+    <h1 class="class_selector">클래스 선택자</h1>
+    <p>
+        본문 class="name" | 스타일 .name { }
+    <br>특정한 이름을 부여하여 선택하는 선택자로, html화면 내에서 이름 하나로 여러번 사용 가능
+    <br>주로 작은 요소, 작은 단락, 변화가 잦은 스타일
+    </p>
+</body>
+</html>

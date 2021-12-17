@@ -1,0 +1,39 @@
+웹개발반 프로젝트로 깃헙-이클립스 협업을 하게 되었다.
+
+clone git repository로 조장님이 만드신 레포지토리를 가져왔다.
+
+커밋 테스트를 하기 위해 커밋을 시도했다.
+
+커밋 최종 입력 칸에는 ID와 PW가 있었는데 깃허브 아이디와 패스워드를 입력하면 될 줄 알았다.
+
+계속 시도해봤지만 MISS SIGNING KEY 문구가 뜨는 등 등 커넥을 할 수 없었다.
+
+팝업창 문구로 구글링을 했다. 
+
+아뿔싸. 패스워드 칸에 입력해야 할 것은 패스워드가 아닌 토큰 값이었다.
+
+구글링해서 찾아낸 방법을 토대로 따라했다.
+
+먼저, 깃허브 홈페이지에 들어가 로그인 후 프로필 로고를 클릭해서 Settings - Developer Settings을 찾아간다.
+
+들어가면 왼쪽 메뉴 칸에 GitHub Apps, OAuth Apps, Personal access tokens 세 항목이 있다.
+
+Personal access tokens으로 들어간다. token을 생성한 적이 없다면 Generate new token을 통해 하나 만들어준다.
+
+주의할 점은 생성 후에 토큰 값이 뜨는데 해당 페이지에 나간 후에는 다시는 볼 수 없기 때문에 복사-저장해둔다.
+
+메모장에 저장해두는 것이 좋겠다. 토큰을 생성하고 값을 복사했다면 다시 이클립스로 간다.
+
+커밋을 하기 위해 '커밋 앤 푸쉬' 버튼을 누른다. 다시금 ID와 PW를 입력한다. 
+
+ID는 깃허브 아이디, PW는 복사한 토큰 값이다. 이제 커밋이 아주 잘 될 것이다.
+
+
+
+
+토큰
+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
+
+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
+
+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

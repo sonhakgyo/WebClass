@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콜백함수</title>
+</head>
+<body>
+    <!-- 콜백함수는 자동으로 불려지는 함수 -->
+    <!-- 파라미터로 함수를 '변수'로 저장 후 전달받아 함수 내부에서 실행하는 함수 -->
+    <h2>콜백함수</h2>
+    <script>
+        'use strict';
+        const num = [1, 2, 3, 4, 5];
+
+    /* 파라미터(매개변수) 자리에 함수 생성을 했다. */
+        num.forEach(x => {
+            console.log(x * 10);
+        });
+        
+    /* 파라미터(매개변수) 자리에 함수 생성을 했다. */
+        num.forEach(function (x) {
+            console.log(x * 10);
+        });
+
+        function setUserid(userid, callback) {
+            console.log(`userid : ${userid}`);
+            callback();
+        }
+
+        function finish() {
+            console.log('finish function!');
+        }
+
+    /* 'apple' 파라미터와 finish 함수를 전달받았다. */
+        setUserid('apple', finish);
+
+
+        
+        const userid = 'apple';
+
+        function callbackFunc(callback) {
+            let name = '반하나';
+            callback(name);
+        }
+
+        function userinfo(name) {
+            console.log(`userid : ${userid}, name : ${name}`);
+        }
+
+        callbackFunc(userinfo);
+    </script>
+</body>
+</html>
